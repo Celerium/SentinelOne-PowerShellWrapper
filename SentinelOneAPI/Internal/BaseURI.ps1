@@ -30,7 +30,7 @@ function Add-S1BaseURI {
         N\A
 
     .LINK
-        https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Add-S1BaseURI.html
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Add-S1BaseURI.html
 
 #>
 
@@ -77,7 +77,7 @@ function Get-S1BaseURI {
         N\A
 
     .LINK
-        https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Get-S1BaseURI.html
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Get-S1BaseURI.html
 
 #>
 
@@ -109,7 +109,7 @@ function Remove-S1BaseURI {
         N\A
 
     .LINK
-        https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Remove-S1BaseURI.html
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Remove-S1BaseURI.html
 
 #>
 

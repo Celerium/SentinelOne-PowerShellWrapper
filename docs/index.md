@@ -92,7 +92,7 @@ After importing this module, you will need to configure both the *base URI* & *A
 
 ---
 
-## Help & Usage :blue_book
+## Help & Usage :blue_book:
 
 To view documentation for the module as well as any commands you can browse the online Github pages
 
@@ -111,7 +111,7 @@ Get-Help Get-S1Accounts -Full
 
 ---
 
-## Primary ToDo List :dart
+## Primary ToDo List :dart:
 
 * [x] Documentation automation
   * [ ] Updatable help
@@ -119,7 +119,7 @@ Get-Help Get-S1Accounts -Full
 * [ ] Build a better API parameter to more securely handle API keys
 * [ ] Add compatibility with PowerShell Core
 
-## Secondary ToDo List :dart
+## Secondary ToDo List :dart:
 
 * [ ] Implement other METHODS `( DELETE, POST, PUT )`
 * [ ] Example scripts & reports

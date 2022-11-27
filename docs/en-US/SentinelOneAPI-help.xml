@@ -37561,12 +37561,8 @@
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
-        <maml:linkText>Online Version:</maml:linkText>
+        <maml:linkText>https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Add-S1APIKey.html</maml:linkText>
         <maml:uri>https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Add-S1APIKey.html</maml:uri>
-      </maml:navigationLink>
-      <maml:navigationLink>
-        <maml:linkText>https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Add-S1APIKey.html</maml:linkText>
-        <maml:uri>https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Add-S1APIKey.html</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
@@ -37666,12 +37662,8 @@
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
-        <maml:linkText>Online Version:</maml:linkText>
+        <maml:linkText>https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Add-S1BaseURI.html</maml:linkText>
         <maml:uri>https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Add-S1BaseURI.html</maml:uri>
-      </maml:navigationLink>
-      <maml:navigationLink>
-        <maml:linkText>https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Add-S1BaseURI.html</maml:linkText>
-        <maml:uri>https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Add-S1BaseURI.html</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
@@ -37772,12 +37764,8 @@
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
-        <maml:linkText>Online Version:</maml:linkText>
+        <maml:linkText>https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Export-S1ModuleSettings.html</maml:linkText>
         <maml:uri>https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Export-S1ModuleSettings.html</maml:uri>
-      </maml:navigationLink>
-      <maml:navigationLink>
-        <maml:linkText>https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Export-S1ModuleSettings.html</maml:linkText>
-        <maml:uri>https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Export-S1ModuleSettings.html</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
@@ -37848,12 +37836,8 @@
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
-        <maml:linkText>Online Version:</maml:linkText>
+        <maml:linkText>https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Get-S1APIKey.html</maml:linkText>
         <maml:uri>https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Get-S1APIKey.html</maml:uri>
-      </maml:navigationLink>
-      <maml:navigationLink>
-        <maml:linkText>https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Get-S1APIKey.html</maml:linkText>
-        <maml:uri>https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Get-S1APIKey.html</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
@@ -37893,12 +37877,8 @@
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
-        <maml:linkText>Online Version:</maml:linkText>
+        <maml:linkText>https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Get-S1BaseURI.html</maml:linkText>
         <maml:uri>https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Get-S1BaseURI.html</maml:uri>
-      </maml:navigationLink>
-      <maml:navigationLink>
-        <maml:linkText>https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Get-S1BaseURI.html</maml:linkText>
-        <maml:uri>https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Get-S1BaseURI.html</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
@@ -38001,12 +37981,8 @@
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
-        <maml:linkText>Online Version:</maml:linkText>
+        <maml:linkText>https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Import-S1ModuleSettings.html</maml:linkText>
         <maml:uri>https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Import-S1ModuleSettings.html</maml:uri>
-      </maml:navigationLink>
-      <maml:navigationLink>
-        <maml:linkText>https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Import-S1ModuleSettings.html</maml:linkText>
-        <maml:uri>https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Import-S1ModuleSettings.html</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
@@ -38093,12 +38069,8 @@
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
-        <maml:linkText>Online Version:</maml:linkText>
+        <maml:linkText>https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Remove-S1APIKey.html</maml:linkText>
         <maml:uri>https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Remove-S1APIKey.html</maml:uri>
-      </maml:navigationLink>
-      <maml:navigationLink>
-        <maml:linkText>https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Remove-S1APIKey.html</maml:linkText>
-        <maml:uri>https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Remove-S1APIKey.html</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
@@ -38185,12 +38157,8 @@
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
-        <maml:linkText>Online Version:</maml:linkText>
+        <maml:linkText>https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Remove-S1BaseURI.html</maml:linkText>
         <maml:uri>https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Remove-S1BaseURI.html</maml:uri>
-      </maml:navigationLink>
-      <maml:navigationLink>
-        <maml:linkText>https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Remove-S1BaseURI.html</maml:linkText>
-        <maml:uri>https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Remove-S1BaseURI.html</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
@@ -38338,12 +38306,8 @@
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
-        <maml:linkText>Online Version:</maml:linkText>
+        <maml:linkText>https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Remove-S1ModuleSettings.html</maml:linkText>
         <maml:uri>https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Remove-S1ModuleSettings.html</maml:uri>
-      </maml:navigationLink>
-      <maml:navigationLink>
-        <maml:linkText>https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Remove-S1ModuleSettings.html</maml:linkText>
-        <maml:uri>https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Remove-S1ModuleSettings.html</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
@@ -38418,12 +38382,8 @@
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
-        <maml:linkText>Online Version:</maml:linkText>
-        <maml:uri>https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Test-S1APIKey.html</maml:uri>
-      </maml:navigationLink>
-      <maml:navigationLink>
-        <maml:linkText>https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Test-S1ApiKey.html</maml:linkText>
-        <maml:uri>https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Test-S1ApiKey.html</maml:uri>
+        <maml:linkText>https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Test-S1ApiKey.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Test-S1ApiKey.html</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>

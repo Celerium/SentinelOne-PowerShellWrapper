@@ -100,5 +100,5 @@ N\A
 
 ## RELATED LINKS
 
-[https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Import-S1ModuleSettings.html](https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Import-S1ModuleSettings.html)
+[https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Import-S1ModuleSettings.html](https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Import-S1ModuleSettings.html)
 

@@ -31,7 +31,7 @@ function Add-S1APIKey {
         N\A
 
     .LINK
-        https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Add-S1APIKey.html
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Add-S1APIKey.html
 
 #>
 
@@ -86,7 +86,7 @@ function Get-S1APIKey {
         N\A
 
     .LINK
-        https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Get-S1APIKey.html
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Get-S1APIKey.html
 
 #>
 
@@ -136,7 +136,7 @@ function Remove-S1APIKey {
         N\A
 
     .LINK
-        https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Remove-S1APIKey.html
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Remove-S1APIKey.html
 
 #>
 
@@ -181,7 +181,7 @@ function Test-S1APIKey {
         N\A
 
     .LINK
-        https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Test-S1ApiKey.html
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Test-S1ApiKey.html
 
 #>
 

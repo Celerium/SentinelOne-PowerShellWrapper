@@ -172,7 +172,7 @@ Try{
 
         if (Get-InstalledModule -Name $moduleName -ErrorAction SilentlyContinue -Verbose:$false){
             $Commands = Get-Command -Module $moduleName -ErrorAction Stop | Sort-Object Name
-            #Import-Module -Name $moduleName -Force -Verbose:$false
+            Import-Module -Name $moduleName -Force -Verbose:$false
         }
         else{
             throw "The $moduleName module was not found"

@@ -76,5 +76,5 @@ N\A
 
 ## RELATED LINKS
 
-[https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Remove-S1BaseURI.html](https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Remove-S1BaseURI.html)
+[https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Remove-S1BaseURI.html](https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Internal/Remove-S1BaseURI.html)
 
