@@ -145,7 +145,7 @@ function Get-S1CustomDetectionRules {
             Cannot fully validate due to permissions
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/CustomDetectionRule/Get-S1CustomDetectionRules.html
 
 #>
 

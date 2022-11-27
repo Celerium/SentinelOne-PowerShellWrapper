@@ -1,0 +1,80 @@
+############
+#   Info   #
+############
+
+# David Schulte (Celerium)
+# https://celerium.org
+
+############
+#   Main   #
+############
+
+title: SentinelOneAPI
+description: Online documentation for the SentinelOneAPI PowerShell wrapper
+remote_theme: just-the-docs/just-the-docs
+color_scheme: dark
+
+# Set a path/url to a logo that will be displayed instead of the title
+#logo: "https://celerium.org/wp-content/uploads/2021/04/Unicorn-01-LargeTall-Clear2.png"
+
+# Aux links for the upper right navigation
+aux_links_new_tab: true
+aux_links:
+  "Celerium":
+    - "https://celerium.org/"
+  "GitHub":
+    - "https://github.com/Celerium/SentinelOne-PowerShellWrapper"
+  "Support":
+    - "https://paypal.me/CeleriumSupport"
+
+
+############
+#   Body   #
+############
+
+#Exclude directories
+#exclude:
+#  - cab/
+#  - en-US/
+
+# External navigation links
+nav_external_links:
+  - title: SentinelOneAPI on GitHub
+    url: https://github.com/Celerium/SentinelOne-PowerShellWrapper
+
+# Call outs (Notes,Warning..etc)
+callouts_level: loud #quiet # or loud
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
+
+############
+#  Footer  #
+############
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Copyright
+footer_content: "Copyright &copy; 2020-2023 David Schulte (Celerium). Distributed by an <a href=\"https://github.com/Celerium/SentinelOne-PowerShellWrapper/blob/main/LICENSE\">MIT license.</a>"
+
+# Footer "Edit this page on GitHub" link text
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/Celerium/SentinelOne-PowerShellWrapper"
+gh_edit_branch: "main"
+gh_edit_source: docs
+gh_edit_view_mode: "blob" # "tree" or "edit" if you want the user to jump into the editor immediately

@@ -123,7 +123,7 @@ function Get-S1Tags {
             and create\edit\query on accounts and sites but not with this endpoint.
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Tags/Get-S1Tags.html
 
 #>
 

@@ -127,7 +127,7 @@ function Get-S1RangerDeployCredGroups {
             Maybe add dynamic parameters for sortBy to adjust for group details
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/RangerDeploy/Get-S1RangerDeployCredGroups.html
 
 #>
 

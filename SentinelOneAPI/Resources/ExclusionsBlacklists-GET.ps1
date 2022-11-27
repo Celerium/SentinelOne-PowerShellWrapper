@@ -220,7 +220,7 @@ function Export-S1Blacklists {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/ExclusionsAndBlacklist/Export-S1Blacklists.html
 
 #>
 
@@ -662,7 +662,7 @@ function Export-S1Exclusions {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/ExclusionsAndBlacklist/Export-S1Exclusions.html
 
 #>
 
@@ -1126,7 +1126,7 @@ function Get-S1Blacklists {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/ExclusionsAndBlacklist/Get-S1Blacklists.html
 
 #>
 
@@ -1589,7 +1589,7 @@ function Get-S1Exclusions {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/ExclusionsAndBlacklist/Get-S1Exclusions.html
 
 #>
 

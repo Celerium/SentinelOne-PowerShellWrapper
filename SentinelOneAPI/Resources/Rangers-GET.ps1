@@ -323,7 +323,7 @@ function Export-S1Rangers {
             Cannot fully validate due to permissions and licensing
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Ranger/Export-S1Rangers.html
 
 #>
 
@@ -661,7 +661,7 @@ function Get-S1RangerSettings {
             Cannot fully validate due to permissions and licensing
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Ranger/Get-S1RangerSettings.html
 
 #>
 
@@ -1054,7 +1054,7 @@ function Get-S1RangerTables {
             Cannot fully validate due to permissions and licensing
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Ranger/Get-S1RangerTables.html
 
 #>
 
@@ -1376,7 +1376,7 @@ function Get-S1Rangers {
             Cannot fully validate due to permissions and licensing
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Ranger/Get-S1Rangers.html
 
 #>
 

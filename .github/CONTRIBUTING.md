@@ -13,6 +13,7 @@
 
 * [ ] Submit a pulling request to the **development** branch
 * [ ] Ensure the pull request description clearly describes the problem and solution.
+* [ ] If updating documentation make sure to update the tracking CSV in the docs folder if needed
 * [ ] Make sure the **ModuleVersion** number is updated in the **SentinelOneAPI.psd1** file
   * MAJOR version when you make incompatible API changes
   * MINOR version when you add functionality in a backwards-compatible manner
@@ -28,10 +29,10 @@ If the feature is accepted and I have time to test, the pull request will be app
 
 * Once the new feature is ready,
 
-  - [ ] Make sure the ModuleManifest "ModuleVersion" number is updated
-  - [ ] Update any documentation if needed
-  - [ ] Submit a pulling request to the **development** branch
-
+  * [ ] Make sure the ModuleManifest "ModuleVersion" number is updated
+  * [ ] Update any documentation if needed
+  * [ ] Update the tracking CSV in the docs folder if needed
+  * [ ] Submit a pulling request to the **development** branch
 
 If the feature is accepted and I have time to test, the pull request will be approved.
 

@@ -50,7 +50,7 @@ function Export-S1ThreatFiles {
             Cannot fully validate due to permissions
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Threats/Export-S1ThreatFiles.html
 
 #>
 
@@ -210,7 +210,7 @@ function Export-S1ThreatEvents {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Threats/Export-S1ThreatEvents.html
 
 #>
 
@@ -388,7 +388,7 @@ function Export-S1ThreatMitigations {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Threats/Export-S1ThreatMitigations.html
 
 #>
 
@@ -538,7 +538,7 @@ function Export-S1ThreatTimelines {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Threats/Export-S1ThreatTimelines.html
 
 #>
 
@@ -1177,7 +1177,7 @@ function Export-S1Threats {
         Review\validate every parameter & parameter help
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Threats/Export-S1Threats.html
 
 #>
 
@@ -1736,7 +1736,7 @@ function Get-S1ThreatEvents {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Threats/Get-S1ThreatEvents.html
 
 #>
 
@@ -1881,7 +1881,7 @@ function Get-S1ThreatExclusionTypes {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Threats/Get-S1ThreatExclusionTypes.html
 
 #>
 
@@ -2011,7 +2011,7 @@ function Get-S1ThreatTimelines {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Threats/Get-S1ThreatTimelines.html
 
 #>
 
@@ -2653,7 +2653,7 @@ function Get-S1Threats {
         Review\validate every parameter & parameter help
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Threats/Get-S1Threats.html
 
 #>
 

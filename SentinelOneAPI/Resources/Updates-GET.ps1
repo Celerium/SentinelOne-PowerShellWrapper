@@ -83,7 +83,7 @@ function Export-S1UpdatePackages {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Updates/Export-S1UpdatePackages.html
 #>
 
     [CmdletBinding( DefaultParameterSetName = 'index' )]
@@ -302,7 +302,7 @@ function Get-S1UpdatePackages {
             The value of "scopeLevel" in the "sortBy" parameter returns a validation error
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Updates/Get-S1UpdatePackages.html
 
 #>
 

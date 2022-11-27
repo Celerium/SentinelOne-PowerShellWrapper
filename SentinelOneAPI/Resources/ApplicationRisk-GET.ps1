@@ -161,7 +161,7 @@ function Export-S1Applications {
         Figure out the "installedAt__between" parameter
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/ApplicationRisk/Export-S1Applications.html
 
 #>
 
@@ -522,7 +522,7 @@ function Get-S1Applications {
         Figure out the "installedAt__between" parameter
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/ApplicationRisk/Get-S1Applications.html
 
 #>
 
@@ -872,7 +872,7 @@ function Get-S1ApplicationCVEs {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/ApplicationRisk/Get-S1ApplicationCVEs.html
 
 #>
 

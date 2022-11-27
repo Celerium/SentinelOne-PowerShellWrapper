@@ -50,7 +50,7 @@ function Get-S1AutoUpgradePolicy {
 
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/AutoUpgradePolicy/Get-S1AutoUpgradePolicy.html
 
 #>
 

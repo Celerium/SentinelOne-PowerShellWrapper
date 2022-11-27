@@ -26,7 +26,7 @@ function Get-S1UserApiToken {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Users/Get-S1UserApiToken.html
 #>
 
     [CmdletBinding( DefaultParameterSetName = 'index' )]
@@ -104,7 +104,7 @@ function Get-S1UserAccess {
         Look into combining all three into 1 output object.
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Users/Get-S1UserAccess.html
 #>
 
     [CmdletBinding( DefaultParameterSetName = 'indexByViewer' )]
@@ -271,7 +271,7 @@ function Export-S1Users {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Users/Export-S1Users.html
 #>
 
     [CmdletBinding( DefaultParameterSetName = 'index' )]
@@ -582,7 +582,7 @@ function Get-S1Users {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Users/Get-S1Users.html
 #>
 
     [CmdletBinding( DefaultParameterSetName = 'index' )]
@@ -767,7 +767,7 @@ function Connect-S1UserByToken {
             Figure out how to test\use this
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Users/Connect-S1UserByToken.html
 #>
 
     [CmdletBinding( DefaultParameterSetName = 'index' )]
@@ -871,7 +871,7 @@ function Connect-S1UserBySSO {
             Figure out how to test\use this
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Users/Connect-S1UserBySSO.html
 #>
 
     [CmdletBinding( DefaultParameterSetName = 'index' )]
@@ -984,7 +984,7 @@ function Get-S1UserByToken {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Users/Get-S1UserByToken.html
 #>
 
     [CmdletBinding( DefaultParameterSetName = 'index' )]
@@ -1088,7 +1088,7 @@ function Get-S1UserTokenVerification {
             Cannot fully validate
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Users/Get-S1UserTokenVerification.html
 #>
 
     [CmdletBinding( DefaultParameterSetName = 'index' )]

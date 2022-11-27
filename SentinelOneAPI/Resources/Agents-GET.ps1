@@ -64,7 +64,7 @@ function Export-S1AgentLogs {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Agents/Export-S1AgentLogs.html
 
 #>
 
@@ -1021,7 +1021,7 @@ function Export-S1Agents {
         Review\validate every parameter & parameter help
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Agents/Export-S1Agents.html
 #>
 
     [CmdletBinding( DefaultParameterSetName = 'index' )]
@@ -2632,7 +2632,7 @@ function Get-S1Agents {
         Review\validate every parameter & parameter help
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Agents/Get-S1Agents.html
 
 #>
 
@@ -3390,7 +3390,7 @@ function Get-S1AgentApplications {
         Maybe add an agentId column to the output to help differentiate where applications are installed
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Agents/Get-S1AgentApplications.html
 #>
 
     [CmdletBinding( DefaultParameterSetName = 'index' )]
@@ -4307,7 +4307,7 @@ function Get-S1AgentPassphrases {
         Review\validate every parameter & parameter help
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Agents/Get-S1AgentPassphrases.html
 
 #>
 
@@ -5122,7 +5122,7 @@ function Get-S1AgentTags {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Agents/Get-S1AgentTags.html
 
 #>
 

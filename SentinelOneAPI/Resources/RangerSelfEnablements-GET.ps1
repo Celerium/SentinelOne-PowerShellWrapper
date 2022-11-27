@@ -31,7 +31,7 @@ function Get-S1RangerEnablementDefaults {
             Cannot fully validate due to permissions and licensing
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/RangerSelfEnablement/Get-S1RangerEnablementDefaults.html
 
 #>
 
@@ -229,7 +229,7 @@ function Get-S1RangerEnablements {
             Cannot fully validate due to permissions and licensing
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/RangerSelfEnablement/Get-S1RangerEnablementDefaults.html
 
 #>
 

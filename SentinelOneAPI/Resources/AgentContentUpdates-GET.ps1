@@ -94,7 +94,7 @@ function Get-S1AgentContentUpdates {
                 /web/api/v2.1/atlas-agents-control/hotfix-policy/policy
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/AgentContentUpdates/Get-S1AgentContentUpdates.html
 
 #>
 

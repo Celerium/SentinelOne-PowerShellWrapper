@@ -69,7 +69,7 @@ function Get-S1Settings {
             Cannot fully validate due to permissions
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Settings/Get-S1Settings.html
 
 #>
 
@@ -217,7 +217,7 @@ function Get-S1SettingEmailRecipients {
             Cannot fully validate due to permissions
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Settings/Get-S1SettingEmailRecipients.html
 
 #>
 

@@ -200,7 +200,7 @@ function Export-S1FirewallCategoryRules {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/NetworkQuarantineControl/Export-S1FirewallCategoryRules.html
 #>
 
     [CmdletBinding( DefaultParameterSetName = 'index' )]
@@ -449,7 +449,7 @@ function Get-S1FirewallCategoryConfig {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/NetworkQuarantineControl/Get-S1FirewallCategoryConfig.html
 #>
 
     [CmdletBinding( DefaultParameterSetName = 'index' )]
@@ -738,7 +738,7 @@ function Get-S1FirewallCategoryRules {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/NetworkQuarantineControl/Get-S1FirewallCategoryRules.html
 #>
 
 [CmdletBinding( DefaultParameterSetName = 'index' )]
@@ -1004,7 +1004,7 @@ function Get-S1FirewallCategoryProtocols {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/NetworkQuarantineControl/Get-S1FirewallCategoryProtocols.html
 #>
 
 [CmdletBinding( DefaultParameterSetName = 'index' )]

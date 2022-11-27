@@ -4,4 +4,4 @@ $S1_Headers.Add("Content-Type", 'application/json')
 
 Set-Variable -Name "S1_Headers" -Value $S1_Headers -Scope global
 
-Import-S1ModuleSettings -Verbose
+Import-S1ModuleSettings

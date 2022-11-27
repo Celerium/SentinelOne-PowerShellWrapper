@@ -112,7 +112,7 @@ function Export-S1Accounts {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Accounts/Export-S1Accounts.html
 #>
 
     [CmdletBinding( DefaultParameterSetName = 'index' )]
@@ -399,7 +399,7 @@ function Get-S1Accounts {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Accounts/Get-S1Accounts.html
 
 #>
 
@@ -576,7 +576,7 @@ function Get-S1AccountsUninstallPassword {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Accounts/Get-S1AccountsUninstallPassword.html
 
 #>
 

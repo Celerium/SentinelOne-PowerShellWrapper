@@ -332,7 +332,7 @@ function Get-S1Gateways {
             Cannot fully validate due to permissions
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Gateways/Get-S1Gateways.html
 
 #>
 

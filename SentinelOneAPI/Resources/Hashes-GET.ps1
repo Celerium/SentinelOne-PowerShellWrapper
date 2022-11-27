@@ -26,7 +26,7 @@ function Get-S1HashReputation {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Hashes/Get-S1HashReputation.html
 
 #>
 

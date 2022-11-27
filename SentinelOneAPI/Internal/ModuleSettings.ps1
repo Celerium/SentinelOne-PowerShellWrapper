@@ -40,7 +40,7 @@ function Export-S1ModuleSettings {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Export-S1ModuleSettings.html
 
 #>
 
@@ -117,7 +117,7 @@ function Import-S1ModuleSettings {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Import-S1ModuleSettings.html
 
 #>
 
@@ -203,7 +203,7 @@ function Remove-S1ModuleSettings {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://github.com/Celerium/SentinelOne-PowerShellWrapper/site/Internal/Remove-S1ModuleSettings.html
 
 #>
 

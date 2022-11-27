@@ -304,7 +304,7 @@ function Get-S1Alerts {
             Cannot pull data from /cloud-detection/alerts due to insufficient permissions
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Alerts/Get-S1Alerts.html
 #>
 
     [CmdletBinding( DefaultParameterSetName = 'index' )]

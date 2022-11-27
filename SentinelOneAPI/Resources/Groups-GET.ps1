@@ -172,7 +172,7 @@ function Get-S1Groups {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Groups/Get-S1Groups.html
 
 #>
 

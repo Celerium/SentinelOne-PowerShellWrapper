@@ -166,7 +166,7 @@ function Export-S1Sites {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Sites/Export-S1Sites.html
 #>
 
     [CmdletBinding( DefaultParameterSetName = 'index' )]
@@ -567,7 +567,7 @@ function Get-S1Sites {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Sites/Get-S1Sites.html
 
 #>
 

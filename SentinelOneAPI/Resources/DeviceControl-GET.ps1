@@ -186,7 +186,7 @@ function Export-S1DeviceControlRules {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/DeviceControl/Export-S1DeviceControlRules.html
 
 #>
 
@@ -446,7 +446,7 @@ function Get-S1DeviceControlConfiguration {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/DeviceControl/Get-S1DeviceControlConfiguration.html
 
 #>
 
@@ -705,7 +705,7 @@ function Get-S1DeviceControlEvents {
             The "access_permissions" parameter does not work [ "dict_values(['accessPermissions']): Unknown field" ]
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/DeviceControl/Get-S1DeviceControlEvents.html
 
 #>
 
@@ -1090,7 +1090,7 @@ function Get-S1DeviceControlRules {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/DeviceControl/Get-S1DeviceControlRules.html
 
 #>
 

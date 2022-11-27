@@ -236,7 +236,7 @@ function Get-S1ThreatIntelligence {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/ThreatIntelligence/Get-S1ThreatIntelligence.html
 
 #>
 

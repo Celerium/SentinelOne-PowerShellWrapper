@@ -167,7 +167,7 @@ function Export-S1Activities {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Activities/Export-S1Activities.html
 
 #>
 
@@ -525,7 +525,7 @@ function Get-S1Activities {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Activities/Get-S1Activities.html
 
 #>
 
@@ -883,7 +883,7 @@ function Get-S1ActivitiesAsSyslog {
         2022-10: Cannot validate as no scope has syslog enabled at the present time
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Activities/Get-S1ActivitiesAsSyslog.html
 
 #>
 

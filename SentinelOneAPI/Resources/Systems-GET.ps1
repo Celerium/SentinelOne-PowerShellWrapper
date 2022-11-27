@@ -67,7 +67,7 @@ function Get-S1Systems {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/System/Get-S1Systems.html
 #>
 
     [CmdletBinding( DefaultParameterSetName = 'indexByStatus' )]
@@ -178,7 +178,7 @@ function Get-S1SystemsOverview {
         Find a more elegant way of making\adding data to an object
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/System/Get-S1SystemsOverview.html
 #>
 
     [CmdletBinding()]

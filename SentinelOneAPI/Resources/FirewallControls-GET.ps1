@@ -196,7 +196,7 @@ function Export-S1FirewallRules {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/FirewallControl/Export-S1FirewallRules.html
 
 #>
 
@@ -448,7 +448,7 @@ function Get-S1FirewallConfig {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/FirewallControl/Get-S1FirewallConfig.html
 
 #>
 
@@ -743,7 +743,7 @@ function Get-S1FirewallRules {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/FirewallControl/Get-S1FirewallRules.html
 
 #>
 
@@ -996,7 +996,7 @@ function Get-S1FirewallProtocols {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/FirewallControl/Get-S1FirewallProtocols.html
 
 #>
 
@@ -1299,7 +1299,7 @@ function Get-S1FirewallRulesByTag {
         Maybe combine this function with the "Get-S1FirewallRules" function
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/FirewallControl/Get-S1FirewallRulesByTag.html
 
 #>
 

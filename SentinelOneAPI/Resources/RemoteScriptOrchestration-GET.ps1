@@ -110,7 +110,7 @@ function Get-S1RemoteScripts {
             Cannot fully validate due to permissions and licensing
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/RemoteScriptOrchestration/Get-S1RemoteScripts.html
 
 #>
 
@@ -438,7 +438,7 @@ function Get-S1RemoteScriptStatus {
             Cannot fully validate due to permissions and licensing
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/RemoteScriptOrchestration/Get-S1RemoteScriptStatus.html
 
 #>
 

@@ -45,7 +45,7 @@ function Get-S1MarketplaceAppCatalog {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Marketplace/Get-S1MarketplaceAppCatalog.html
 
 #>
 
@@ -148,7 +148,7 @@ function Get-S1MarketplaceAppConfigFields {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Marketplace/Get-S1MarketplaceAppConfigFields.html
 
 #>
 
@@ -216,7 +216,7 @@ function Get-S1MarketplaceAppConfigSchema {
             Cannot fully validate due to permissions
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Marketplace/Get-S1MarketplaceAppConfigSchema.html
 
 #>
 
@@ -379,7 +379,7 @@ function Get-S1MarketplaceAppInstalls {
             The "scopes" parameter returns a 500 error and appears to be bugged as it does it in the management portal as well.
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Marketplace/Get-S1MarketplaceAppInstalls.html
 
 #>
 

@@ -68,7 +68,7 @@ function Export-S1Reports {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Reports/Export-S1Reports.html
 
 #>
 
@@ -221,7 +221,7 @@ function Get-S1ReportInsights {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Reports/Get-S1ReportInsights.html
 
 #>
 
@@ -447,7 +447,7 @@ function Get-S1ReportTasks {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Reports/Get-S1ReportTasks.html
 
 #>
 
@@ -757,7 +757,7 @@ function Get-S1Reports {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Reports/Get-S1Reports.html
 
 #>
 
@@ -916,12 +916,12 @@ function Get-S1RSSFeeds {
         Get the SentinelOne RSS feed.
 
     .DESCRIPTION
-        The Get-S1Reports cmdlet gets the SentinelOne RSS feed.
+        The Get-S1RSSFeeds cmdlet gets the SentinelOne RSS feed.
 
         In the SentinelOne Management Console, we show the feed contents in the Dashboard.
 
     .EXAMPLE
-        Get-S1Reports
+        Get-S1RSSFeeds
 
         Returns the SentinelOne RSS feed.
 
@@ -929,7 +929,7 @@ function Get-S1RSSFeeds {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Reports/Get-S1RSSFeeds.html
 
 #>
 

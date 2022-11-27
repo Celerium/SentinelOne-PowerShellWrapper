@@ -146,7 +146,7 @@ function Get-S1Locations {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Locations/Get-S1Locations.html
 
 #>
 

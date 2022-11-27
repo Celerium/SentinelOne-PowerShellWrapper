@@ -46,7 +46,7 @@ function Export-S1DeepVisibilityProcessFile {
             Cannot fully validate due to permissions
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/DeepVisibility/Export-S1DeepVisibilityProcessFile.html
 
 #>
 
@@ -219,7 +219,7 @@ function Get-S1DeepVisibilityEvents {
             Cannot fully validate due to permissions
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/DeepVisibility/Get-S1DeepVisibilityEvents.html
 
 #>
 
@@ -375,7 +375,7 @@ function Get-S1DeepVisibilityProcessState {
             Cannot fully validate due to permissions
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/DeepVisibility/Get-S1DeepVisibilityProcessState.html
 
 #>
 
@@ -480,7 +480,7 @@ function Get-S1DeepVisibilityQueryStatus {
             Cannot fully validate due to permissions
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/DeepVisibility/Get-S1DeepVisibilityProcessState.html
 
 #>
 
@@ -566,7 +566,7 @@ function Get-S1DeepVisibilityPowerQueryPing {
             Cannot fully validate due to permissions
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/DeepVisibility/Get-S1DeepVisibilityPowerQueryPing.html
 
 #>
 

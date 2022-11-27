@@ -83,7 +83,7 @@ function Get-S1ThreatNotes {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/ThreatNotes/Get-S1ThreatNotes.html
 
 #>
 

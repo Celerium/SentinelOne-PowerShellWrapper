@@ -104,7 +104,7 @@ function Get-S1Filters {
             Cannot fully validate the deep visibility endpoint due to permissions
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Filters/Get-S1Filters.html
 
 #>
 

@@ -160,7 +160,7 @@ function Get-S1ConfigOverrides {
         Figure out the "createdAt__between" parameter
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/ConfigOverrides/Get-S1ConfigOverrides.html
 
 #>
 

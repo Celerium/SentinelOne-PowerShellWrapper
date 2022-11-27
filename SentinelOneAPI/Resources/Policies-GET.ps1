@@ -48,7 +48,7 @@ function Get-S1Policies {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Policies/Get-S1Policies.html
 
 #>
 

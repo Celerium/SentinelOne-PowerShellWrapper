@@ -259,7 +259,7 @@ function Get-S1RBACRoles {
             The "usersInRoles" parameter does not appear to function (500 error)
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/RBAC/Get-S1RBACRoles.html
 
 #>
 
@@ -533,7 +533,7 @@ function Get-S1RBACRoleTemplate {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/RBAC/Get-S1RBACRoleTemplate.html
 
 #>
 

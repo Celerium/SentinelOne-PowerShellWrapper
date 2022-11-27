@@ -101,7 +101,7 @@ function Get-S1TaskChildScopeConfigurations {
         N\A
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Tasks/Get-S1TaskChildScopeConfigurations.html
 
 #>
 
@@ -309,7 +309,7 @@ function Get-S1TaskConfigurations {
             The "taskType" "agents_upgrade" pulls the same data as "agent_version_change"
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Tasks/Get-S1TaskConfigurations.html
 
 #>
 
@@ -518,7 +518,7 @@ function Get-S1TaskHasChildScopes {
             Look into merging all tasks functions into 1
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Tasks/Get-S1TaskHasChildScopes.html
 
 #>
 

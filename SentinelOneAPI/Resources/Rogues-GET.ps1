@@ -235,7 +235,7 @@ function Export-S1Rogues {
             Cannot fully validate due to permissions and licensing
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Rouges/Export-S1Rogues.html
 
 #>
 
@@ -499,7 +499,7 @@ function Get-S1RogueSettings {
             Cannot fully validate due to permissions and licensing
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Rouges/Get-S1RogueSettings.html
 
 #>
 
@@ -819,7 +819,7 @@ function Get-S1RogueTables {
             Cannot fully validate due to permissions and licensing
 
     .LINK
-        https://github.com/Celerium/S1-PowerShellWrapper
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Rouges/Get-S1RogueTables.html
 
 #>
 
