@@ -1,0 +1,40 @@
+name: 👋 Help Request
+description: What can the community help with
+title: "[Help Request]: "
+labels: ["help wanted"]
+assignees:
+  - Celerium
+body:
+  - type: checkboxes
+    id: ReadME
+    attributes:
+      label: Project README
+      description: "[Project README](https://github.com/Celerium/xxxREPONAMExxx/blob/main/README.md)"
+      options:
+        - label: "Have you read the projects README?"
+  - type: checkboxes
+    id: WebDocumentation
+    attributes:
+      label: Online Documentation
+      description: "[Online Documentation](https://Celerium.github.io/xxxREPONAMExxx/)"
+      options:
+        - label: "Have you read the online documentation"
+  - type: checkboxes
+    id: PowerShellHelp
+    attributes:
+      label: PowerShell Help
+      description: "Get-Help Get-xxxModulePrefixxxx<RESOURCES-NAME> -Full"
+      options:
+        - label: "Have you read the help output?"
+  - type: textarea
+    id: HelpRequest
+    attributes:
+      label: Help Request
+      description: What would you like help with?
+      render: Text
+  - type: textarea
+    id: ExistingIssue
+    attributes:
+      label: Existing Issue?
+      description: Is this related to an existing issue? If so please describe or link.
+      value: "Issue: #12345"

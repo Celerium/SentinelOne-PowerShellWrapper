@@ -1,0 +1,88 @@
+name: 🐛 Bug Report
+description: File a bug report to help us improve
+title: "[Bug]: "
+labels: ["type: bug"]
+assignees:
+  - Celerium
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to fill out this bug report!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: textarea
+    id: ExpectedBehavior
+    attributes:
+      label: Expected behavior?
+      placeholder: Tell us what you see!
+      value: "A bug shouldn't have happened!"
+    validations:
+      required: true
+  - type: textarea
+    id: PossibleSolution
+    attributes:
+      label: Possible Solution?
+    validations:
+      required: false
+  - type: dropdown
+    id: PowerShellVersion
+    attributes:
+      label: PowerShell Version
+      description: What version of PowerShell are you running?
+      options:
+        - 5.1 - (PowerShell)
+        - 7.2.x - (PowerShell Core)
+        - 7.3.x - (PowerShell Core)
+        - 7.4.x - (PowerShell Core)
+  - type: dropdown
+    id: OperatingSystem
+    attributes:
+      label: What operating system are you seeing the problem on?
+      multiple: true
+      options:
+        - Windows
+        - Linux - Ubuntu\Debian
+        - Linux - CentOS\RedHat\Fedora
+        - Linux - openSUSE
+        - macOS
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: PowerShell
+  - type: textarea
+    id: HelpCommands
+    attributes:
+      label: Help Commands
+      description: Please share additional details about your environment.
+      value: "$PSversionTable
+
+        Get-Package -Name xxxModuleNamexxx | Select-Object Name,Version,Source,ProviderName
+
+        Get-ComputerInfo -Property @(
+        'OsName',
+        'OsVersion',
+        'OsOperatingSystemSKU',
+        'OSArchitecture',
+        'WindowsVersion',
+        'WindowsBuildLabEx',
+        'OsLanguage',
+        'OsMuiLanguages'
+        )"
+      render: PowerShell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/Celerium/SentinelOneAPI/blob/main/.github/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

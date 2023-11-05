@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Project Documentation
+    url: https://celerium.github.io/SentinelOneAPI/
+    about: Read through the generated documentation
+  - name: Vendor Documentation
+    url: https://github.com/Celerium
+    about: Read through the vendors documentation
+  - name: Celerium.org
+    url: https://celerium.org
+    about: Website were I publish more information related to this project.

@@ -1,0 +1,397 @@
+﻿Category,Sub-Category,EndpointUri,Method,Function,Complete,v2.0,Notes
+Accounts,Create Account,/accounts,POST,,No,No,
+Accounts,Expire an Account,/accounts/{account_id}/expire-now,POST,,No,No,
+Accounts,Export Accounts,/export/accounts,GET,Export-SentinelOneAccounts,Yes,No,
+Accounts,Generate/Regenerate Uninstall Password,/accounts/{account_id}/uninstall-password/generate,POST,,No,No,
+Accounts,Get Account by Id,/accounts/{account_id},GET,Get-SentinelOneAccounts,Yes,No,
+Accounts,Get Accounts,/accounts,GET,Get-SentinelOneAccounts,Yes,No,
+Accounts,Get Uninstall Password,/accounts/{account_id}/uninstall-password/view,GET,Get-SentinelOneAccountsUninstallPassword,Yes,No,
+Accounts,Get Uninstall Password Metadata,/accounts/{account_id}/uninstall-password/metadata,GET,Get-SentinelOneAccountsUninstallPassword,Yes,No,
+Accounts,Reactivate Account,/accounts/{account_id}/reactivate,PUT,,No,No,
+Accounts,Revert Policy,/accounts/{account_id}/revert-policy,PUT,,No,No,
+Accounts,Revoke Uninstall Password,/accounts/{account_id}/uninstall-password/revoke,POST,,No,No,
+Accounts,Update Account,/accounts/{account_id},PUT,,No,No,
+Activities,Export Activites,/export/activities,GET,Export-SentinelOneActivities,Yes,No,
+Activities,Get Activites,/activities,GET,Get-SentinelOneActivities,Yes,No,
+Activities,Get Activites by Types,/activities/types,GET,Get-SentinelOneActivities,Yes,No,typesOnly parameter calls this Uri
+Activities,Last Activity as Syslog message,/last-activity-as-syslog,GET,Get-SentinelOneActivitiesAsSyslog,Kinda,No,Cannot fully validate as syslog is not enabled on any sites
+AgentActions,Abort Scan,/agents/actions/abort-scan,POST,,No,No,
+AgentActions,Approve Stateless Upgrades,/agents/actions/approve-stateless-upgrade,POST,,No,No,
+AgentActions,Approve Uninstall,/agents/actions/approve-uninstall,POST,,No,No,
+AgentActions,Broadcast Message,/agents/actions/broadcast,POST,,No,No,
+AgentActions,Can Run Remote Shell,/agents/actions/can-start-remote-shell,POST,,No,No,
+AgentActions,Connect To Network,/agents/actions/connect,POST,,No,No,
+AgentActions,Decommission,/agents/actions/decommission,POST,,No,No,
+AgentActions,Disable Agent,/agents/actions/disable-agent,POST,,No,No,
+AgentActions,Disable Ranger,/agents/actions/ranger-disable,POST,,No,No,
+AgentActions,Disconnect From Network,/agents/actions/disconnect,POST,,No,No,
+AgentActions,Enable Agent,/agents/actions/enable-agent,POST,,No,No,
+AgentActions,Enable Ranger,/agents/actions/ranger-enable,POST,,No,No,
+AgentActions,Fetch Files,/agents/{agent_id}/actions/fetch-files,POST,,No,No,
+AgentActions,Fetch Firewall Logs,/agents/actions/firewall-logging,POST,,No,No,
+AgentActions,Fetch Firewall Rules,/agents/actions/fetch-firewall-rules,POST,,No,No,
+AgentActions,Fetch Logs,/agents/actions/fetch-logs,POST,,No,No,
+AgentActions,Get Applications,/agents/actions/fetch-installed-apps,POST,,No,No,
+AgentActions,Initiate Scan,/agents/actions/initiate-scan,POST,,No,No,
+AgentActions,"Manage Endpoint Tags: Add, Remove, Override",/agents/actions/manage-tags,POST,,No,No,
+AgentActions,Mark As Up-to-date,/agents/actions/mark-up-to-date,POST,,No,No,
+AgentActions,Move Between Sites,/agents/actions/move-to-site,POST,,No,No,
+AgentActions,Move To Console,/agents/actions/move-to-console,POST,,No,No,
+AgentActions,Randomize Uuid,/agents/actions/randomize-uuid,POST,,No,No,
+AgentActions,Reject Uninstall,/agents/actions/reject-uninstall,POST,,No,No,
+AgentActions,Reset Local Config,/agents/actions/reset-local-config,POST,,No,No,
+AgentActions,Restart,/agents/actions/restart-machine,POST,,No,No,
+AgentActions,Set External Id,/agents/actions/set-external-id,POST,,No,No,
+AgentActions,Set Persistent Configuration Overrides,/agents/actions/set-config,POST,,No,No,
+AgentActions,Shutdown,/agents/actions/shutdown,POST,,No,No,
+AgentActions,Start Remote Profiling,/agents/actions/start-profiling,POST,,No,No,
+AgentActions,Start Remote Shell,/agents/actions/start-remote-shell,POST,,No,No,
+AgentActions,Stop Remote Profiling,/agents/actions/stop-profiling,POST,,No,No,
+AgentActions,Terminate Remote Shell,/agents/actions/terminate-remote-shell,POST,,No,No,
+AgentActions,Uninstall,/agents/actions/uninstall,POST,,No,No,
+AgentActions,Update Software,/agents/actions/update-software,POST,,No,No,
+AgentContentUpdates,Change Content Updates Policy,/atlas-agents-control/hotfix-policy/policy,PUT,,No,No,
+AgentContentUpdates,Get Agent Merged Updates,/content-updates-inventory,GET,Get-SentinelOneAgentContentUpdates,Kinda,No,Cannot fully validate as agentId with any known id
+AgentContentUpdates,Get Content Updates Types,/atlas-agents-control/hotfix-policy/asset-family-types,GET,Get-SentinelOneAgentContentUpdates,Kinda,No,Cannot fully validate due to permissions
+AgentContentUpdates,Get Existing Content Updates Policy,/atlas-agents-control/hotfix-policy/policy,GET,Get-SentinelOneAgentContentUpdates,Kinda,No,Cannot fully validate due to permissions
+Agents,Applications,/agents/applications,GET,Get-SentinelOneAgentApplications,Yes,No,
+Agents,Count Agents,/agents/count,GET,Get-SentinelOneAgents,Yes,No,Lots of parameters that are not 100% verifyied
+Agents,Export Agent Logs,/agents/{agent_id}/uploads/{activity_id},GET,Export-SentinelOneAgentLogs,Yes,No,
+Agents,Export Agents,/export/agents,GET,Export-SentinelOneAgents,Yes,No,Lots of parameters that are not 100% verifyied
+Agents,Export Agents - Light,/export/agents-light,GET,Export-SentinelOneAgents,Yes,No,Lots of parameters that are not 100% verifyied
+Agents,Get Agents,/agents,GET,Get-SentinelOneAgents,Yes,No,Lots of parameters that are not 100% verifyied
+Agents,Get Passphrase,/agents/passphrases,GET,Get-SentinelOneAgentPassphrases,Yes,No,Lots of parameters that are not 100% verifyied
+Agents,Get The Endpoint Tags That Match The Filters.,/agents/tags,GET,Get-SentinelOneAgentTags,Yes,No,
+Agents,Processes,/agents/processes,GET,Deprecated,N\A,No,Deprecated
+AgentSupportActivities,Clear Remote Shell,/agents/actions/clear-remote-shell-session,POST,,No,No,
+Alerts,Get Alerts,/cloud-detection/alerts,GET,Get-SentinelOneAlerts,Kinda,No,Cannot fully validate due to permissions
+Alerts,Update Alert Analyst Verdict,/cloud-detection/alerts/analyst-verdict,POST,,No,No,
+Alerts,Updated Threat Incident,/cloud-detection/alerts/incident,POST,,No,No,
+ApplicationInventory,Counters,/application-inventory-counts,GET,Deprecated,N\A,No,Deprecated
+ApplicationInventory,Grouped App Inventory ,/application-inventory,GET,Deprecated,N\A,No,Deprecated
+ApplicationRisk,Export Applications,/export/installed-applications,GET,Export-SentinelOneApplications,Yes,No,"Figure out the ""installedAt__between"" parameter"
+ApplicationRisk,Get Applications,/installed-applications,GET,Get-SentinelOneApplications,Yes,No,"Figure out the ""installedAt__between"" parameter"
+ApplicationRisk,Get Cves,/installed-applications/cves,GET,Get-SentinelOneApplicationCVEs,Yes,No,
+AutoUpgradePolicy,Create Policy,/upgrade-policy/policy,POST,,No,No,
+AutoUpgradePolicy,Deactivate Policies,/upgrade-policy/policies,POST,,No,No,
+AutoUpgradePolicy,Get Parent Policies,/upgrade-policy/policies-count,GET,Get-SentinelOneAutoUpgradePolicy,Kinda,No,No documentation for this endpoint or its parameters
+AutoUpgradePolicy,Get Policies,/upgrade-policy/policies,GET,Get-SentinelOneAutoUpgradePolicy,Kinda,No,No documentation for this endpoint or its parameters
+AutoUpgradePolicy,Has Policy,/upgrade-policy/has-policy,POST,,No,No,
+AutoUpgradePolicy,Policy Action,/upgrade-policy/policy/:policyid,POST,,No,No,
+AutoUpgradePolicy,Reorder Policies,/upgrade-policy/reorder,PUT,,No,No,
+AutoUpgradePolicy,Set Scope Inheriting,/upgrade-policy/set-inheriting,PUT,,No,No,
+AutoUpgradePolicy,Update Policy,/upgrade-policy/policy/:policyid,PUT,,No,No,
+ConfigOverrides,Create Config Override,/config-override,POST,,No,No,
+ConfigOverrides,Delete Config Override,/config-override/{override_id},DELETE,,No,No,
+ConfigOverrides,Delete Config Overrides,/config-override,DELETE,,No,No,
+ConfigOverrides,Get Config Overrides,/config-override,GET,Get-SentinelOneConfigOverrides,Kinda,No,"No agents with config overrides to test against, but no known errors in parameters"
+ConfigOverrides,Update Config Override,/config-override/{override_id},PUT,,No,No,
+CustomDetectionRule,Activate Rules,/cloud-detection/rules/enable,PUT,,No,No,
+CustomDetectionRule,Create Rule,/cloud-detection/rules,POST,,No,No,
+CustomDetectionRule,Delete Rules,/cloud-detection/rules,DELETE,,No,No,
+CustomDetectionRule,Disable Rules,/cloud-detection/rules/disable,PUT,,No,No,
+CustomDetectionRule,Get Rules,/cloud-detection/rules,GET,Get-SentinelOneCustomDetectionRules,Kinda,No,Cannot fully validate due to permissions
+CustomDetectionRule,Update Rule,/cloud-detection/rules/{rule_id},PUT,,No,No,
+DeepVisibility,Cancel Running Query,/dv/cancel-query,POST,,No,No,
+DeepVisibility,Create A Power Query And Get Queryid,/dv/events/pq,POST,,No,No,
+DeepVisibility,Create Query And Get Queryid,/dv/init-query,POST,,No,No,
+DeepVisibility,Download Source Process File,/dv/fetch-file,GET,Export-SentinelOneDeepVisibilityProcessFile,Kinda,No,Cannot fully validate due to permissions
+DeepVisibility,Get Events,/dv/events,GET,Get-SentinelOneDeepVisibilityEvents,Kinda,No,Cannot fully validate due to permissions
+DeepVisibility,Get Events By Type,/dv/events/{event_type},GET,Get-SentinelOneDeepVisibilityEvents,Kinda,No,Cannot fully validate due to permissions
+DeepVisibility,Get Process State,/dv/process-state,GET,Get-SentinelOneDeepVisibilityProcessState,Kinda,No,Cannot fully validate due to permissions
+DeepVisibility,Get Query Status,/dv/query-status,GET,Get-SentinelOneDeepVisibilityQueryStatus,Kinda,No,Cannot fully validate due to permissions
+DeepVisibility,Ping A Power Query If Results Haven't Been Retrieved,/dv/events/pq-ping,GET,Get-SentinelOneDeepVisibilityPowerQueryPing,Kinda,No,Cannot fully validate due to permissions
+DeviceControl,Copy Rules,/device-control/copy-rules,POST,,No,No,
+DeviceControl,Create Device Control Rule,/device-control,POST,,No,No,
+DeviceControl,Delete Rules,/device-control,DELETE,,No,No,
+DeviceControl,Enable/disable Rules,/device-control/enable,PUT,,No,No,
+DeviceControl,Export Rules,/device-control/export,GET,Export-SentinelOneDeviceControlRules,Yes,No,
+DeviceControl,Get Configuration,/device-control/configuration,GET,Get-SentinelOneDeviceControlConfiguration,Yes,No,
+DeviceControl,Get Device Control Events,/device-control/events,GET,Get-SentinelOneDeviceControlEvents,Yes,No,"The ""access_permissions"" parameter does not work [ ""dict_values(['accessPermissions']): Unknown field"" ]"
+DeviceControl,Get Device Rules,/device-control,GET,Get-SentinelOneDeviceControlRules,Yes,No,
+DeviceControl,Move Rules,/device-control/move-rules,POST,,No,No,
+DeviceControl,Reorder Rules,/device-control/reorder,PUT,,No,No,
+DeviceControl,Update Configuration,/device-control/configuration,PUT,,No,No,
+DeviceControl,Update Device Rule,/device-control/{rule_id},PUT,,No,No,
+ExclusionsAndBlacklist,Create Blacklist Item,/restrictions,POST,,No,No,
+ExclusionsAndBlacklist,Create Exclusion,/exclusions,POST,,No,No,
+ExclusionsAndBlacklist,Delete Blacklist Item,/restrictions,DELETE,,No,No,
+ExclusionsAndBlacklist,Delete Exclusions,/exclusions,DELETE,,No,No,
+ExclusionsAndBlacklist,Export Blacklist,/export/restrictions,GET,Export-SentinelOneBlacklists,Yes,No,
+ExclusionsAndBlacklist,Export Exclusions,/export/exclusions,GET,Export-SentinelOneExclusions,Yes,No,
+ExclusionsAndBlacklist,Get Blacklist,/restrictions,GET,Get-SentinelOneBlacklists,Yes,No,
+ExclusionsAndBlacklist,Get Exclusions,/exclusions,GET,Get-SentinelOneExclusions,Yes,No,
+ExclusionsAndBlacklist,Update Blacklist Item,/restrictions,PUT,,No,No,
+ExclusionsAndBlacklist,Update Exclusions,/exclusions,PUT,,No,No,
+ExclusionsAndBlacklist,Validate Blacklist Item,/restrictions/validate,POST,,No,No,
+ExclusionsAndBlacklist,Validate Exclusion Item,/exclusions/validate,POST,,No,No,
+Filters,Delete Deep Visibility Filter,/filters/dv/{filter_id},DELETE,,No,No,
+Filters,Delete Filter,/filters/{filter_id},DELETE,,No,No,
+Filters,Get Deep Visibility Filters,/filters/dv,GET,Get-SentinelOneFilters,Kinda,No,Cannot fully validate due to permissions
+Filters,Get Filters,/filters,GET,Get-SentinelOneFilters,Yes,No,
+Filters,Save Deep Visibility Filter,/filters/dv,POST,,No,No,
+Filters,Save Filter,/filters,POST,,No,No,
+Filters,Update Deep Visibility Filter,/filters/dv/{filter_id},PUT,,No,No,
+Filters,Update Filter,/filters/{filter_id},PUT,,No,No,
+Filters,Upload Csv File,/filters/csv-filter,POST,,No,No,
+FirewallControl,Add Rule Tags,/firewall-control/add-tags,POST,,No,No,
+FirewallControl,Copy Rules,/firewall-control/copy-rules,POST,,No,No,
+FirewallControl,Create Firewall Rule,/firewall-control,POST,,No,No,
+FirewallControl,Delete Rules,/firewall-control,DELETE,,No,No,
+FirewallControl,Enable/disable Rules,/firewall-control/enable,PUT,,No,No,
+FirewallControl,Export Rules,/firewall-control/export,GET,Export-SentinelOneFirewallRules,Yes,No,
+FirewallControl,Get Configuration,/firewall-control/configuration,GET,Get-SentinelOneFirewallConfig,Yes,No,
+FirewallControl,Get Firewall Rules,/firewall-control,GET,Get-SentinelOneFirewallRules,Yes,No,
+FirewallControl,Get Protocols,/firewall-control/protocols,GET,Get-SentinelOneFirewallProtocols,Yes,No,
+FirewallControl,Get Tag Firewall Rules,/firewall-control/tag-rules/{tag_id},GET,Get-SentinelOneFirewallRulesByTag,Yes,No,"Maybe combine this function with the ""Get-SentinelOneFirewallRules"" function"
+FirewallControl,Import Rules,/firewall-control/import,POST,,No,No,
+FirewallControl,Move Rules,/firewall-control/move-rules,POST,,No,No,
+FirewallControl,Remove Rule Tags,/firewall-control/remove-tags,POST,,No,No,
+FirewallControl,Reorder Rules,/firewall-control/reorder,PUT,,No,No,
+FirewallControl,Set Location,/firewall-control/set-location,POST,,No,No,
+FirewallControl,Update Configuration,/firewall-control/configuration,PUT,,No,No,
+FirewallControl,Update Firewall Rule,/firewall-control/{firewall_rule_category},PUT,,No,No,
+Forensics,Application Connections,/applications/{application_id}/forensics/connections,GET,Deprecated,N\A,No,Deprecated
+Forensics,Application Forensics,/applications/{application_id}/forensics,GET,Deprecated,N\A,No,Deprecated
+Forensics,Application Forensics - Detailed,/applications/{application_id}/forensics/details,GET,Deprecated,N\A,No,Deprecated
+Forensics,Export Application,/applications/{application_id}/forensics/export/{export_format},GET,Deprecated,N\A,No,Deprecated
+Gateways,Get Gateways,/ranger/gateways,GET,Get-SentinelOneGateways,Kinda,No,Cannot fully validate due to permissions
+Gateways,Update Gateway,/ranger/gateways/{gateway_id},PUT,,No,No,
+Gateways,Update Gateways,/ranger/gateways/update,POST,,No,No,
+Groups,Create Group,/groups,POST,,No,No,
+Groups,Delete Group,/groups/{group_id},DELETE,,No,No,
+Groups,Get Group By Id,/groups/{group_id},GET,Get-SentinelOneGroups,Yes,No,
+Groups,Get Groups,/groups,GET,Get-SentinelOneGroups,Yes,No,
+Groups,Move Agents,/groups/{group_id}/move-agents,PUT,,No,No,
+Groups,Regenerate Group Token,/groups/{group_id}/regenerate-key,PUT,,No,No,
+Groups,Revert Policy,/groups/{group_id}/revert-policy,PUT,,No,No,
+Groups,Update Group,/groups/{group_id},PUT,,No,No,
+Groups,Update Ranks,/groups/ranks,PUT,,No,No,
+Hashes,Hash Classification,/hashes/{hash}/classification,GET,Deprecated,N\A,No,Deprecated
+Hashes,Hash Reputation,/hashes/{hash}/reputation,GET,Get-SentinelOneHashReputation,Yes,No,
+Internal,,,POST,Add-SentinelOneAPIKey,Yes,No,
+Internal,,,GET,Get-SentinelOneAPIKey,Yes,No,
+Internal,,,DELETE,Remove-SentinelOneAPIKey,Yes,No,
+Internal,,,GET,Test-SentinelOneAPIKey,Yes,No,
+Internal,,,POST,Add-SentinelOneBaseURI,Yes,No,
+Internal,,,GET,Get-SentinelOneBaseURI,Yes,No,
+Internal,,,DELETE,Remove-SentinelOneBaseURI,Yes,No,
+Internal,,,GET,Export-SentinelOneModuleSettings,Yes,No,
+Internal,,,PUT,Import-SentinelOneModuleSettings,Yes,No,
+Internal,,,DELETE,Remove-SentinelOneModuleSettings,Yes,No,
+Licenses,Update Sites Add-ons,/licenses/update-site-modules,PUT,,No,No,
+Locations,Create Location,/locations,POST,,No,No,
+Locations,Delete Locations,/locations,DELETE,,No,No,
+Locations,Get Locations,/locations,GET,Get-SentinelOneLocations,Yes,No,
+Locations,Update Location,/locations/{location_id},PUT,,No,No,
+Marketplace,Delete Application,/singularity-marketplace/applications,DELETE,,No,No,
+Marketplace,Enable Or Disable Application,/singularity-marketplace/applications/{mode},POST,,No,No,
+Marketplace,Get Applications Catalog,/singularity-marketplace/applications-catalog,GET,Get-SentinelOneMarketplaceAppCatalog,Yes,No,
+Marketplace,Get Configuration Fields,/singularity-marketplace/applications-catalog/{application_catalog_id}/config,GET,Get-SentinelOneMarketplaceAppConfigFields,Yes,No,
+Marketplace,Get Configuration Fields For Catalog Application,/singularity-marketplace/applications/{application_id}/config,GET,Get-SentinelOneMarketplaceAppConfigSchema,Kinda,No,Cannot fully validate due to permissions
+Marketplace,Get Installed Applications,/singularity-marketplace/applications,GET,Get-SentinelOneMarketplaceAppInstalls,Yes,No,"The ""scopes"" parameter returns a 500 error and appears to be bugged as it does it in the management portal as well."
+Marketplace,Install Applications,/singularity-marketplace/applications,POST,,No,No,
+Marketplace,Update Application Configuration,/singularity-marketplace/applications,PUT,,No,No,
+NetworkQuarantineControl,Add Rule Tags,/firewall-control/{firewall_rule_category}/add-tags,POST,,No,No,
+NetworkQuarantineControl,Copy Rules,/firewall-control/{firewall_rule_category}/copy-rules,POST,,No,No,
+NetworkQuarantineControl,Create Firewall Rule,/firewall-control/{firewall_rule_category},POST,,No,No,
+NetworkQuarantineControl,Delete Rules,/firewall-control/{firewall_rule_category},DELETE,,No,No,
+NetworkQuarantineControl,Enable/disable Rules,/firewall-control/{firewall_rule_category}/enable,PUT,,No,No,
+NetworkQuarantineControl,Export Rules,/firewall-control/{firewall_rule_category}/export,GET,Export-SentinelOneFirewallCategoryRules,Yes,No,
+NetworkQuarantineControl,Get Configuration,/firewall-control/{firewall_rule_category}/configuration,GET,Get-SentinelOneFirewallCategoryConfig,Yes,No,
+NetworkQuarantineControl,Get Firewall Rules,/firewall-control/{firewall_rule_category},GET,Get-SentinelOneFirewallCategoryRules,Yes,No,
+NetworkQuarantineControl,Get Protocols,/firewall-control/{firewall_rule_category}/protocols,GET,Get-SentinelOneFirewallCategoryProtocols,Yes,No,
+NetworkQuarantineControl,Import Rules,/firewall-control/{firewall_rule_category}/import,POST,,No,No,
+NetworkQuarantineControl,Move Rules,/firewall-control/{firewall_rule_category}/move-rules,POST,,No,No,
+NetworkQuarantineControl,Remove Rule Tags,/firewall-control/{firewall_rule_category}/remove-tags,POST,,No,No,
+NetworkQuarantineControl,Reorder Rules,/firewall-control/{firewall_rule_category}/reorder,PUT,,No,No,
+NetworkQuarantineControl,Set Location,/firewall-control/{firewall_rule_category}/set-location,POST,,No,No,
+NetworkQuarantineControl,Update Configuration,/firewall-control/{firewall_rule_category}/configuration,PUT,,No,No,
+Policies,Account Policy,/accounts/{account_id}/policy,GET,Get-SentinelOnePolicies,Yes,No,
+Policies,Global Policy,/tenant/policy,GET,Get-SentinelOnePolicies,Yes,No,
+Policies,Group Policy,/groups/{group_id}/policy,GET,Get-SentinelOnePolicies,Yes,No,
+Policies,Site Policy,/sites/{site_id}/policy,GET,Get-SentinelOnePolicies,Yes,No,
+Policies,Update Account Policy,/accounts/{account_id}/policy,PUT,,No,No,
+Policies,Update Global Policy,/tenant/policy,PUT,,No,No,
+Policies,Update Group Policy,/groups/{group_id}/policy,PUT,,No,No,
+Policies,Update Site Policy,/sites/{site_id}/policy,PUT,,No,No,
+Ranger,Change Device Review,/ranger/device-review/{inventory_id},PUT,,No,No,
+Ranger,Change Device Review In Bulk,/ranger/device-review,POST,,No,No,
+Ranger,Change Device Tags,/ranger/tags,POST,,No,No,
+Ranger,Export Json Raw Data,/ranger/{inventory_id}/json/export,GET,Export-SentinelOneRangers,Kinda,No,Cannot fully validate due to permissions and licensing
+Ranger,Export Ranger Data,/ranger/report/csv,GET,Export-SentinelOneRangers,Kinda,No,Cannot fully validate due to permissions and licensing
+Ranger,Get Ranger Settings,/ranger/settings,GET,Get-SentinelOneRangerSettings,Kinda,No,Cannot fully validate due to permissions and licensing
+Ranger,Get Ranger Table,/ranger/table-view,GET,Get-SentinelOneRangerTables,Kinda,No,Cannot fully validate due to permissions and licensing
+Ranger,Json Raw Data,/ranger/{inventory_id}/json,GET,Get-SentinelOneRangers,Kinda,No,Cannot fully validate due to permissions and licensing
+Ranger,Update Ranger Settings,/ranger/settings,PUT,,No,No,
+RangerDeploy,Add Cred Details,/ranger/cred-groups/details,POST,,No,No,
+RangerDeploy,Create Cred Group,/ranger/cred-groups,POST,,No,No,
+RangerDeploy,Delete Cred Group,/ranger/cred-groups/{cred_group_id},DELETE,,No,No,
+RangerDeploy,Delete Cred Group Detail,/ranger/cred-groups/details/{detail_id},DELETE,,No,No,
+RangerDeploy,Get Cred Group Details,/ranger/cred-groups/details,GET,Get-SentinelOneRangerDeployCredGroups,Kinda,No,Cannot fully validate due to permissions and licensing
+RangerDeploy,Get Cred Groups,/ranger/cred-groups,GET,Get-SentinelOneRangerDeployCredGroups,Kinda,No,Cannot fully validate due to permissions and licensing
+RangerDeploy,Update Cred Group Details,/ranger/cred-groups/details/{detail_id},PUT,,No,No,
+RangerSelfEnablement,Change Feature Defaults For New Sites,/ranger/enablement/defaults,POST,,No,No,
+RangerSelfEnablement,Change Ranger Or Rogues Features,/ranger/enablement,POST,,No,No,
+RangerSelfEnablement,Change The Self-enablement For Accounts,/ranger/enable-self-management,POST,,No,No,
+RangerSelfEnablement,Features Configuration For New Sites,/ranger/enablement/defaults,GET,Get-SentinelOneRangerEnablementDefaults,Kinda,No,Cannot fully validate due to permissions and licensing
+RangerSelfEnablement,Get Self Enablement,/ranger/enablement,GET,Get-SentinelOneRangerEnablements,Kinda,No,Cannot fully validate due to permissions and licensing
+RBAC,Create New Role,/rbac/role,POST,,No,No,
+RBAC,Delete Role,/rbac/role/{role_id},DELETE,,No,No,
+RBAC,Get All Roles,/rbac/roles,GET,Get-SentinelOneRBACRoles,Yes,No,
+RBAC,Get Specific Role Definition,/rbac/role/{role_id},GET,Get-SentinelOneRBACRoles,Yes,No,
+RBAC,Get Template For New Role,/rbac/role,GET,Get-SentinelOneRBACRoleTemplate,Yes,No,
+RBAC,Update Role,/rbac/role/{role_id},PUT,,No,No,
+RemoteScriptOrchestration,Delete Scripts,/remote-scripts,DELETE,,No,No,
+RemoteScriptOrchestration,Get Remote Scripts Tasks Status,/remote-scripts/status,GET,Get-SentinelOneRemoteScripts,Kinda,No,Cannot fully validate due to permissions and licensing
+RemoteScriptOrchestration,Get Script Results,/remote-scripts/fetch-files,POST,,No,No,
+RemoteScriptOrchestration,Get Scripts,/remote-scripts,GET,Get-SentinelOneRemoteScriptStatus,Kinda,No,Cannot fully validate due to permissions and licensing
+RemoteScriptOrchestration,Run Remote Script,/remote-scripts/execute,POST,,No,No,
+RemoteScriptOrchestration,Update A Script,/remote-scripts/{script_id},PUT,,No,No,
+RemoteScriptOrchestration,Upload New Script,/remote-scripts,POST,,No,No,
+Reports,Create Report Task,/report-tasks,POST,,No,No,
+Reports,Delete Report Tasks,/reports/delete-tasks,POST,,No,No,
+Reports,Delete Reports,/reports/delete-reports,POST,,No,No,
+Reports,Download Report,/reports/{report_id}/{report_format},GET,Export-SentinelOneReports,Yes,No,
+Reports,Get Insight Reports,/reports/insights/types,GET,Get-SentinelOneReportInsights,Yes,No,
+Reports,Get Report Tasks,/report-tasks,GET,Get-SentinelOneReportTasks,Yes,No,
+Reports,Get Reports,/reports,GET,Get-SentinelOneReports,Yes,No,
+Reports,SentinelOne Rss Feed,/sentinelonerss,GET,Get-SentinelOneRSSFeeds,Yes,No,
+Reports,Update Report Task,/report-tasks/{task_id},PUT,,No,No,
+Rouges,Export Rogues Data,/rogues/report/csv,GET,Export-SentinelOneRogues,Kinda,No,Cannot fully validate due to permissions and licensing
+Rouges,Get Rogues Settings,/rogues/settings,GET,Get-SentinelOneRogueSettings,Kinda,No,Cannot fully validate due to permissions and licensing
+Rouges,Get Rogues Table,/rogues/table-view,GET,Get-SentinelOneRogueTables,Kinda,No,Cannot fully validate due to permissions and licensing
+Rouges,Update Rogues Settings,/rogues/settings,PUT,,No,No,
+Settings,Clear Pending Emails,/settings/notifications/cancel-pending-emails,POST,,No,No,
+Settings,Delete Notification Recipient,/settings/recipients/{recipient_id},DELETE,,No,No,
+Settings,Get Ad Fqdns,/settings/active-directory/scope-mapping,GET,Get-SentinelOneSettings,Kinda,No,Cannot fully validate due to permissions and licensing
+Settings,Get Ad Settings,/settings/active-directory,GET,Get-SentinelOneSettings,Kinda,No,Cannot fully validate due to permissions and licensing
+Settings,Get Microsoft Settings,/settings/microsoft,GET,Deprecated,N\A,No,Deprecated
+Settings,Get Notification Recipients,/settings/recipients,GET,Get-SentinelOneSettingEmailRecipients,Kinda,No,Cannot fully validate due to permissions and licensing
+Settings,Get Notification Settings,/settings/notifications,GET,Get-SentinelOneSettings,Kinda,No,Cannot fully validate due to permissions and licensing
+Settings,Get Sms Settings,/settings/sms,GET,Deprecated,N\A,No,Deprecated
+Settings,Get Smtp Settings,/settings/smtp,GET,Get-SentinelOneSettings,Kinda,No,Cannot fully validate due to permissions and licensing
+Settings,Get Sso Settings,/settings/sso,GET,Get-SentinelOneSettings,Kinda,No,Cannot fully validate due to permissions and licensing
+Settings,Get Syslog Settings,/settings/syslog,GET,Get-SentinelOneSettings,Kinda,No,Cannot fully validate due to permissions and licensing
+Settings,Set Ad Fqdns,/settings/active-directory/scope-mapping,PUT,,No,No,
+Settings,Set Ad Settings,/settings/active-directory,PUT,,No,No,
+Settings,Set Microsoft Settings,/settings/microsoft,PUT,,No,No,Deprecated
+Settings,Set Notification Recipients,/settings/recipients,PUT,,No,No,
+Settings,Set Notification Settings,/settings/notifications,PUT,,No,No,
+Settings,Set Sms Settings,/settings/sms,PUT,,No,No,Deprecated
+Settings,Set Smtp Settings,/settings/smtp,PUT,,No,No,
+Settings,Set Sso Settings,/settings/sso,PUT,,No,No,
+Settings,Set Syslog Settings,/settings/syslog,PUT,,No,No,
+Settings,Test Ad Settings,/settings/active-directory/test,POST,,No,No,
+Settings,Test Microsoft Settings,/settings/microsoft/test,POST,,No,No,Deprecated
+Settings,Test Smtp Settings,/settings/smtp/test,POST,,No,No,
+Settings,Test Sso Settings,/settings/sso/test,POST,,No,No,
+Settings,Test Syslog Settings,/settings/syslog/test,POST,,No,No,
+Sites,Create Duplicate Site,/sites/duplicate-site,POST,,No,No,Deprecated
+Sites,Create Site,/sites,POST,,No,No,
+Sites,Create Site And User,/site-with-admin,POST,,No,No,
+Sites,Delete Site,/sites/{site_id},DELETE,,No,No,
+Sites,Expire Site,/sites/{site_id}/expire-now,POST,,No,No,
+Sites,Export Sites,/export/sites,GET,Export-SentinelOneSites,Yes,No,
+Sites,Get Site By Id,/sites/{site_id},GET,Get-SentinelOneSites,Yes,Yes,
+Sites,Get Sites,/sites,GET,Get-SentinelOneSites,Yes,Yes,
+Sites,Reactivate Site,/sites/{site_id}/reactivate,PUT,,No,No,
+Sites,Regenerate Site Key,/sites/{site_id}/regenerate-key,PUT,,No,No,
+Sites,Revert Policy,/sites/{site_id}/revert-policy,PUT,,No,No,
+Sites,Update Site,/sites/{site_id},PUT,,No,No,
+Sites,Update Sites,/sites/update-bulk,PUT,,No,No,
+System,Cache Status,/system/status/cache,GET,"Get-SentinelOneSystems,Get-SentinelOneSystemsOverview",Yes,No,
+System,Database Status,/system/status/db,GET,"Get-SentinelOneSystems,Get-SentinelOneSystemsOverview",Yes,No,
+System,Get System Config,/system/configuration,GET,Get-SentinelOneSystems,Yes,No,
+System,Set System Config,/system/configuration,PUT,,No,No,
+System,System Info,/system/info,GET,"Get-SentinelOneSystems,Get-SentinelOneSystemsOverview",Yes,No,
+System,System Status,/system/status,GET,"Get-SentinelOneSystems,Get-SentinelOneSystemsOverview",Yes,No,
+TagManager,Create A New Endpoint Tag,/tag-manager,POST,,No,No,
+TagManager,Delete Tags,/tag-manager,DELETE,,No,No,
+TagManager,Edit An Existing Tag,/tag-manager/{tag_id},PUT,,No,No,
+Tags,Create Tags,/tags,POST,,No,No,
+Tags,Delete Tag By Id,/tags/{tag_id},DELETE,,No,No,
+Tags,Delete Tags,/tags,DELETE,,No,No,
+Tags,Edit Tag,/tags/{tag_id},PUT,,No,No,
+Tags,Get Tags,/tags,GET,Get-SentinelOneTags,Kinda,No,Cannot fully validate due to permissions and licensing
+Tasks,Create Task,/tasks-configuration,PUT,,No,No,
+Tasks,Get Child Scope Task Configuration,/tasks-configuration/explicit-subscopes,GET,Get-SentinelOneTaskChildScopeConfigurations,Kinda,No,Look into merging all three functions into one
+Tasks,Get Task Configuration,/tasks-configuration,GET,Get-SentinelOneTaskConfigurations,Kinda,No,Look into merging all three functions into one
+Tasks,Has Child Scopes,/tasks-configuration/has-explicit-subscope,GET,Get-SentinelOneTaskHasChildScopes,Kinda,No,Look into merging all three functions into one
+ThreatIntelligence,Create Iocs,/threat-intelligence/iocs,POST,,No,No,
+ThreatIntelligence,Delete Iocs,/threat-intelligence/iocs,DELETE,,No,No,
+ThreatIntelligence,Get Iocs,/threat-intelligence/iocs,GET,Get-SentinelOneThreatIntelligence,Yes,No,
+ThreatNotes,Add Note To Multiple,/threats/notes,POST,,No,No,
+ThreatNotes,Delete Threat Note,/threats/{threat_id}/notes/{note_id},DELETE,,No,No,
+ThreatNotes,Get Threat Notes,/threats/{threat_id}/notes,GET,Get-SentinelOneThreatNotes,Yes,No,
+ThreatNotes,Update Threat Note,/threats/{threat_id}/notes/{note_id},PUT,,No,No,
+Threats,Add To Blacklist,/threats/add-to-blacklist,POST,,No,No,
+Threats,Add To Blacklist (Deep Visibility),/threats/dv-add-to-blacklist,POST,,No,No,
+Threats,Add To Exclusions,/threats/add-to-exclusions,POST,,No,No,
+Threats,Disable Engines,/threats/engines/disable,POST,,No,No,
+Threats,Disconnect Container,/threats/actions/container-network-disconnect,POST,,No,No,
+Threats,Download From Cloud,/threats/{threat_id}/download-from-cloud,GET,Export-SentinelOneThreatFiles,Kinda,No,Cannot fully validate due to permissions
+Threats,Exclusion Options,/threats/{threat_id}/whitening-options,GET,Get-SentinelOneThreatExclusionTypes,Yes,No,
+Threats,Export Events,/export/threats/{threat_id}/explore/events,GET,Export-SentinelOneThreatEvents,Yes,No,
+Threats,Export Mitigation Report,/threats/mitigation-report/{report_id},GET,Export-SentinelOneThreatMitigations,Yes,No,
+Threats,Export Threat Timeline,/export/threats/{threat_id}/timeline,GET,Export-SentinelOneThreatTimelines,Yes,No,
+Threats,Export Threats,/threats/export,GET,Export-SentinelOneThreats,Yes,No,Lots of parameters that are not 100% verifyied
+Threats,Fetch Threat File,/threats/fetch-file,POST,,No,No,
+Threats,Get Events,/threats/{threat_id}/explore/events,GET,Get-SentinelOneThreatEvents,Yes,No,
+Threats,Get Threat Timeline,/threats/{threat_id}/timeline,GET,Get-SentinelOneThreatTimelines,Yes,No,
+Threats,Get Threats,/threats,GET,Get-SentinelOneThreats,Yes,No,Lots of parameters that are not 100% verifyied
+Threats,Mark As Threat (Deep Visibility),/threats/dv-mark-as-threat,POST,,No,No,
+Threats,Mitigate Threats,/threats/mitigate/{action},POST,,No,No,
+Threats,Reconnect Container,/threats/actions/container-network-connect,POST,,No,No,
+Threats,Update Threat Analyst Verdict,/threats/analyst-verdict,POST,,No,No,
+Threats,Update Threat External Ticket Id,/threats/external-ticket-id,POST,,No,No,
+Threats,Updated Threat Incident,/threats/incident,POST,,No,No,
+Updates,Delete Packages,/update/agent/packages,DELETE,,No,No,
+Updates,Deploy System Package,/upload/software/deploy,POST,,No,No,
+Updates,Download Agent Package ,/update/agent/download/{package_id},GET,Deprecated,N\A,No,Deprecated
+Updates,Download Package,/update/agent/download/{site_id}/{package_id},GET,Export-SentinelOneUpdatePackages,Yes,No,
+Updates,Get Latest Packages,/update/agent/packages,GET,Get-SentinelOneUpdatePackages,Yes,No,
+Updates,Latest Packages By Os,/update/agent/latest-packages,GET,Deprecated,N\A,No,Deprecated
+Updates,Update Package,/update/agent/packages/{package_id},PUT,,No,No,
+Updates,Upload Agent Package,/upload/agent/software,POST,,No,No,
+Updates,Upload System Package,/upload/software,POST,,No,No,
+Users,Api Token By User Id,/users/{user_id}/api-token-details,GET,Get-SentinelOneUserApiToken,Yes,No,
+Users,Api Token Details,/users/api-token-details,POST,,No,No,
+Users,Auth App,/users/auth/app,POST,,No,No,
+Users,Auth By Sso,/users/login/sso-saml2/{scope_id},POST,,No,No,
+Users,Auth Recovery Code,/users/auth/recovery-code,POST,,No,No,
+Users,Bulk Delete Users,/users/delete-users,POST,,No,No,
+Users,Change Password,/users/change-password,POST,,No,No,
+Users,Check Global User,/users/tenant-admin-auth-check,GET,Get-SentinelOneUserAccess,Yes,No,Look into combining all three into 1 output object.
+Users,Check Remote Shell Permissions,/users/rs-auth-check,GET,Get-SentinelOneUserAccess,Yes,No,Look into combining all three into 1 output object.
+Users,Check Viewer,/users/viewer-auth-check,GET,Get-SentinelOneUserAccess,Yes,No,Look into combining all three into 1 output object.
+Users,Create User,/users,POST,,No,No,
+Users,Delete User,/users/{user_id},DELETE,,No,No,
+Users,Disable 2fa,/users/2fa/disable,POST,,No,No,
+Users,Email Verification,/users/onboarding/verify,POST,,No,No,
+Users,Enable 2fa,/users/2fa/enable,POST,,No,No,
+Users,Enable 2fa App,/users/enable-app,POST,,No,No,
+Users,Export Users,/export/users,GET,Export-SentinelOneUsers,Yes,No,
+Users,Generate Api Token,/users/generate-api-token,POST,,No,No,
+Users,Generate Iframe Token,/users/generate-iframe-token,POST,,No,No,
+Users,Generate Recovery Code,/users/generate-recovery-codes,POST,,No,No,
+Users,Get User,/users/{user_id},GET,Get-SentinelOneUsers,Yes,No,
+Users,List Users,/users,GET,Get-SentinelOneUsers,Yes,No,
+Users,Login,/users/login,POST,,No,No,
+Users,Login By Api Token,/users/login/by-api-token,POST,,No,No,
+Users,Login By Token,/users/login/by-token,GET,Connect-SentinelOneUserByToken,Kinda,No,Cannot fully validate
+Users,Logout,/users/logout,POST,,No,No,
+Users,Redirect To Sso,/users/login/sso-saml2,GET,Connect-SentinelOneUserBySSO,Kinda,No,Cannot fully validate
+Users,Request 2fa App,/users/request-app,POST,,No,No,
+Users,Resend 2fa Email Code,/users/{user_id}/resend-recovery-email-code,POST,,No,No,
+Users,Reset 2fa,/users/reset-2fa,POST,,No,No,
+Users,Revoke Api Token,/users/revoke-api-token,POST,,No,No,
+Users,Send 2fa Code,/users/2fa-recover/send-code,POST,,No,No,
+Users,Send Verification Email,/users/onboarding/send-verification-email,POST,,No,No,
+Users,Sign Eula,/users/auth/eula,POST,,No,No,
+Users,Update 2fa Email,/users/{user_id}/recovery-email,PUT,,No,No,
+Users,Update User,/users/{user_id},PUT,,No,No,
+Users,User By Token,/user,GET,Get-SentinelOneUserByToken,Yes,No,
+Users,Validate Verification Token,/users/onboarding/validate-token,GET,Get-SentinelOneUserTokenVerification,Kinda,No,Cannot fully validate
+Users,Verify 2fa Code,/users/2fa-recover/verify-code,POST,,No,No,
+Users,Verify 2fa Email,/users/{user_id}/verify-code-recovery-email,POST,,No,No,

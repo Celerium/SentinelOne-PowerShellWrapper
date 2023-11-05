@@ -1,0 +1,208 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  version: 2.1.0
+  moduleName: SentinelOneAPI
+
+jobs:
+
+# Windows - nonCore
+
+  - job: Window_PowerShell
+    timeoutInMinutes: 10
+    pool:
+      vmImage: 'windows-latest'
+
+    steps:
+    - task: PowerShell@2
+      displayName: Install-Prerequisites
+      name: InstallPrerequisites
+      inputs:
+        pwsh: false
+        targetType: filePath
+        filePath: $(Build.SourcesDirectory)/build/Install-Prerequisites.ps1
+
+    - task: PowerShell@2
+      displayName: Build Documentation__Invoke-helpContent
+      name: BuildDocumentation
+      inputs:
+        pwsh: false
+        targetType: filePath
+        filePath: $(Build.SourcesDirectory)/build/Invoke-helpContent.ps1
+        arguments: -Verbose
+
+    - task: PowerShell@2
+      displayName: Build Module__Invoke-moduleBuild
+      name: BuildModule
+      inputs:
+        pwsh: false
+        targetType: filePath
+        filePath: $(Build.SourcesDirectory)/build/Invoke-moduleBuild.ps1
+        arguments: -version $(version)
+
+    - task: PowerShell@2
+      displayName: Testing__Invoke-pesterTests
+      name: PesterTests
+      inputs:
+        pwsh: false
+        targetType: filePath
+        filePath: $(Build.SourcesDirectory)/build/Invoke-pesterTests.ps1
+        arguments: -version $(version) -buildTarget built
+
+    - task: PublishBuildArtifacts@1
+      displayName: Publish Artifact
+      name: PublishArtifact
+      inputs:
+        ArtifactName: $(moduleName)-$(version)
+        PathtoPublish: $(Build.SourcesDirectory)/build/$(moduleName)/$(version)
+
+# Windows - Core
+
+  - job: Window_PowerShell_Core
+    timeoutInMinutes: 10
+    pool:
+      vmImage: 'windows-latest'
+
+    steps:
+    - task: PowerShell@2
+      displayName: Install-Prerequisites
+      name: InstallPrerequisites
+      inputs:
+        pwsh: true
+        targetType: filePath
+        filePath: $(Build.SourcesDirectory)/build/Install-Prerequisites.ps1
+
+    - task: PowerShell@2
+      displayName: Build Documentation__Invoke-helpContent
+      name: BuildDocumentation
+      inputs:
+        pwsh: true
+        targetType: filePath
+        filePath: $(Build.SourcesDirectory)/build/Invoke-helpContent.ps1
+
+    - task: PowerShell@2
+      displayName: Build Module__Invoke-moduleBuild
+      name: BuildModule
+      inputs:
+        pwsh: true
+        targetType: filePath
+        filePath: $(Build.SourcesDirectory)/build/Invoke-moduleBuild.ps1
+        arguments: -version $(version)
+
+    - task: PowerShell@2
+      displayName: Testing__Invoke-pesterTests
+      name: PesterTests
+      inputs:
+        pwsh: true
+        targetType: filePath
+        filePath: $(Build.SourcesDirectory)/build/Invoke-pesterTests.ps1
+        arguments: -version $(version) -buildTarget built
+
+    - task: PublishBuildArtifacts@1
+      displayName: Publish Artifact
+      name: PublishArtifact
+      inputs:
+        ArtifactName: $(moduleName)-$(version)
+        PathtoPublish: $(Build.SourcesDirectory)/build/$(moduleName)/$(version)
+
+# Linux - Ubuntu
+
+  - job: Ubuntu
+    timeoutInMinutes: 10
+    pool:
+      vmImage: 'ubuntu-latest'
+
+    steps:
+    - task: PowerShell@2
+      displayName: Install-Prerequisites
+      name: InstallPrerequisites
+      inputs:
+        pwsh: true
+        targetType: filePath
+        filePath: $(Build.SourcesDirectory)/build/Install-Prerequisites.ps1
+
+    - task: PowerShell@2
+      displayName: Build Documentation__Invoke-helpContent
+      name: BuildDocumentation
+      inputs:
+        pwsh: true
+        targetType: filePath
+        filePath: $(Build.SourcesDirectory)/build/Invoke-helpContent.ps1
+
+    - task: PowerShell@2
+      displayName: Build Module__Invoke-moduleBuild
+      name: BuildModule
+      inputs:
+        pwsh: true
+        targetType: filePath
+        filePath: $(Build.SourcesDirectory)/build/Invoke-moduleBuild.ps1
+        arguments: -version $(version)
+
+    - task: PowerShell@2
+      displayName: Testing__Invoke-pesterTests
+      name: PesterTests
+      inputs:
+        pwsh: true
+        targetType: filePath
+        filePath: $(Build.SourcesDirectory)/build/Invoke-pesterTests.ps1
+        arguments: -version $(version) -buildTarget built
+
+    - task: PublishBuildArtifacts@1
+      displayName: Publish Artifact
+      name: PublishArtifact
+      inputs:
+        ArtifactName: $(moduleName)-$(version)
+        PathtoPublish: $(Build.SourcesDirectory)/build/$(moduleName)/$(version)
+
+# Linux - macOS
+
+  - job: macOS
+    timeoutInMinutes: 10
+    pool:
+      vmImage: 'macOS-latest'
+
+    steps:
+    - task: PowerShell@2
+      displayName: Install-Prerequisites
+      name: InstallPrerequisites
+      inputs:
+        pwsh: true
+        targetType: filePath
+        filePath: $(Build.SourcesDirectory)/build/Install-Prerequisites.ps1
+
+    - task: PowerShell@2
+      displayName: Build Documentation__Invoke-helpContent
+      name: BuildDocumentation
+      inputs:
+        pwsh: true
+        targetType: filePath
+        filePath: $(Build.SourcesDirectory)/build/Invoke-helpContent.ps1
+
+    - task: PowerShell@2
+      displayName: Build Module__Invoke-moduleBuild
+      name: BuildModule
+      inputs:
+        pwsh: true
+        targetType: filePath
+        filePath: $(Build.SourcesDirectory)/build/Invoke-moduleBuild.ps1
+        arguments: -version $(version)
+
+    - task: PowerShell@2
+      displayName: Testing__Invoke-pesterTests
+      name: PesterTests
+      inputs:
+        pwsh: true
+        targetType: filePath
+        filePath: $(Build.SourcesDirectory)/build/Invoke-pesterTests.ps1
+        arguments: -version $(version) -buildTarget built
+
+    - task: PublishBuildArtifacts@1
+      displayName: Publish Artifact
+      name: PublishArtifact
+      inputs:
+        ArtifactName: $(moduleName)-$(version)
+        PathtoPublish: $(Build.SourcesDirectory)/build/$(moduleName)/$(version)

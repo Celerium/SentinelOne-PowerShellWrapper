@@ -1,0 +1,46 @@
+name: 🚀 Feature Request
+description: Suggest a new feature for this project
+title: "[Feature Request]: "
+labels: ["type: feature request"]
+assignees:
+  - Celerium
+body:
+  - type: checkboxes
+    id: ReadME
+    attributes:
+      label: Project README
+      description: "[Project README](https://github.com/Celerium/xxxREPONAMExxx/blob/main/README.md)"
+      options:
+        - label: "Have you read the projects README?"
+  - type: checkboxes
+    id: WebDocumentation
+    attributes:
+      label: Online Documentation
+      description: "[Online Documentation](https://Celerium.github.io/xxxREPONAMExxx/)"
+      options:
+        - label: "Have you read the online documentation"
+  - type: checkboxes
+    id: PowerShellHelp
+    attributes:
+      label: PowerShell Help
+      description: "Get-Help Get-xxxModulePrefixxxx<RESOURCES-NAME> -Full"
+      options:
+        - label: "Have you read the help output?"
+  - type: textarea
+    id: NewFeature
+    attributes:
+      label: Describe the solution you'd like
+      description: A clear and concise description of what you want to happen.
+      render: Text
+  - type: textarea
+    id: NewFeatureAlternatives
+    attributes:
+      label: Describe alternatives you've considered
+      description: A clear and concise description of any alternative solutions or features you've considered.
+      render: Text
+  - type: textarea
+    id: ExistingIssue
+    attributes:
+      label: Existing Issue?
+      description: Is this related to an existing issue? If so please describe or link.
+      value: "Issue: #12345"
