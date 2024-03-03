@@ -48,7 +48,7 @@ function Invoke-SentinelOneRequest {
             ----                           -----
             Method                         GET
             Uri                            https://api-us.SentinelOne.com/v3/account?accountId=12345&details=True
-            Headers                        {Authorization = Bearer 123456789}
+            Headers                        {Authorization = ApiToken 123456789}
             Body
 
 

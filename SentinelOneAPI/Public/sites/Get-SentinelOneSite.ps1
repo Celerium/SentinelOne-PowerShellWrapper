@@ -1,20 +1,24 @@
-function Export-SentinelOneSites {
+function Get-SentinelOneSite {
 <#
     .SYNOPSIS
-        Exports site data from one more more sites under an account
+        Get the Sites that match the filters
 
     .DESCRIPTION
-        The Export-SentinelOneSites cmdlet exports site data from one more more sites under an account
+        The Get-SentinelOneSites cmdlet get the Site(s) that match the filters
+
+        Endpoints:
+            /web/api/v2.1/sites
+            /web/api/v2.1/sites/{site_id}
 
     .PARAMETER accountId
-        Return sites under the defined AccountId
+        Account id
 
-        This is not the site Id
+        Example: "225494730938493804"
 
     .PARAMETER accountIds
-        Return sites under the defined AccountIds
+        List of Account IDs to filter by
 
-        This is not the site Id
+        Example: "225494730938493804,225494730938493915"
 
     .PARAMETER accountName__contains
         Free-text filter by account name (supports multiple values)
@@ -25,20 +29,27 @@ function Export-SentinelOneSites {
     .PARAMETER adminOnly
         Show sites the user has Admin privileges to
 
-        This command does not function in the console as well
+        As of 2022-12, this does not work
 
     .PARAMETER availableMoveSites
-        Return sites the user can move agents to
+        Only return sites the user can move agents to
+
+    .PARAMETER countOnly
+        If true, only total number of items will be returned, without any of the actual objects
 
     .PARAMETER createdAt
         Returns sites created at the exact UTC timestamp defined
 
         Example: "2018-02-27T04:49:26.257525Z"
 
-    .PARAMETER description
-        Returns sited matching the exact description defined.
+    .PARAMETER cursor
+        Cursor position returned by the last request
 
-        This is case-sensitive
+        Use to iterate over more than 1000 items
+
+    .PARAMETER description
+        Returns sited matching the case-sensitive & exact
+        description defined
 
     .PARAMETER description__contains
         Free-text filter by site description (supports multiple values)
@@ -46,16 +57,16 @@ function Export-SentinelOneSites {
     .PARAMETER expiration
         Returns sites whose expiration time matches the exact UTC timestamp defined
 
-        Example: "2018-02-27T04:49:26.257525Z".
+        Example: "2018-02-27T04:49:26.257525Z"
 
     .PARAMETER externalId
         Id in a CRM external system
 
     .PARAMETER features
-        Return only sites that support this\these features.
+        Return only sites that support this\these features
 
         Allowed Values:
-        'device-control', 'firewall-control', 'ioc'
+            'device-control', 'firewall-control', 'ioc'
 
     .PARAMETER healthStatus
         Returns only sites that are healthy
@@ -63,11 +74,14 @@ function Export-SentinelOneSites {
     .PARAMETER isDefault
         Returns only the default site
 
+    .PARAMETER limit
+        Limit number of returned items (1-1000)
+
     .PARAMETER module
         Returns certain modules from the licenses section
 
     .PARAMETER name
-        Returns sited matching the exact name defined.
+        Returns sited matching the exact name defined
 
         This is case-sensitive
 
@@ -75,28 +89,57 @@ function Export-SentinelOneSites {
         Free-text filter by site name (supports multiple values)
 
     .PARAMETER query
-        Full text search for fields: name, account_name, description.
+        Full text search for fields: name, account_name, description
 
         Note: on single-account consoles account name will not be matched
 
     .PARAMETER registrationToken
         Returns a site with the matching registration token
 
+    .PARAMETER siteId
+        Returns data for a single site matching the defined id
+
+        Returns data from the '/sites/{site_id}' endpoint
+
+        Example: '225494730938493804'
+
     .PARAMETER siteIds
         Returns a list of sites using the defined ids
 
-        Example: "225494730938493804,225494730938493915".
+        Example: "225494730938493804,225494730938493915"
 
     .PARAMETER siteType
         Returns sites of a certain type
 
         Allowed values:
-        'Paid', 'Trial'
+            'Paid', 'Trial'
+
+    .PARAMETER skip
+        Skip first number of items (0-1000)
+
+        To iterate over more than 1000 items, use "cursor"
+
+    .PARAMETER skipCount
+        If true, total number of items will not be calculated, which speeds up execution time
 
     .PARAMETER sku
         Returns sites of a certain sku
 
-        This is case-sensitive
+        Allowed values:
+            'complete', 'control', 'core'
+
+    .PARAMETER sortBy
+        Sorts the returned results by a defined value
+
+        Allowed values:
+        'accountName', 'activeLicenses', 'createdAt', 'description', 'expiration', 'id', 'name', 'siteType',
+        'sku', 'state', 'suite', 'totalLicenses', 'updatedAt'
+
+    .PARAMETER sortOrder
+        Sort direction
+
+        Allowed values:
+        'asc', 'desc'
 
     .PARAMETER state
         Returns sites matching a certain state
@@ -110,12 +153,6 @@ function Export-SentinelOneSites {
         Allowed values:
         'active', 'deleted', 'expired'
 
-    .PARAMETER suite
-        Returns sites with using active defined product features
-
-        Allowed values:
-        'Complete', 'Control', 'Core'
-
     .PARAMETER totalLicenses
         Returns sites matching the total amount of licenses defined
 
@@ -124,60 +161,65 @@ function Export-SentinelOneSites {
 
         Example: "2018-02-27T04:49:26.257525Z"
 
-    .PARAMETER fileName
-        Name of the file
+    .PARAMETER updatedAt
+        Returns sites updated at the exact UTC timestamp defined
 
-        Example: 'MySites-2022'
+        Example: "2018-02-27T04:49:26.257525Z"
 
-        The default name format is 'sites-yyyy-MM-dd_HHmmss'
+    .PARAMETER allPages
+        Returns all items from an endpoint
 
-    .PARAMETER filePath
-        The location to save the file to
-
-        Example: 'C:\Logs'
-
-        The default save location is the current working directory
-
-    .PARAMETER showReport
-        Open the location where the file was saved to
+        Highly recommended to only use with filters to reduce API errors\timeouts
 
     .EXAMPLE
-        Export-SentinelOneSites
+        Get-SentinelOneSites
 
-        Returns all sites and saves the results to a CSV in the current working directory
+        This uses the '/sites' endpoint instead of the '/sites/{site_id}' endpoint
 
-    .EXAMPLE
-        1234567890 | Export-SentinelOneSites
-
-        Returns the site with the matching id defined and saves the results to a CSV in the current working directory
+        Returns the first 10 and data is sorted by their created at date
 
     .EXAMPLE
-        Export-SentinelOneSites -siteId 1234567890,0987654321 -fileName MySites -filePath C:\Logs -showReport
+        Get-SentinelOneSites -siteId 1234567890
 
-        Returns the site with the matching id defined, saves the CSV file in the defined directory with the defined named
-        and opens the location to were the file is saved.
+        Returns the site matching the defined siteId value
+
+        This uses the '/sites/{site_id}' endpoint instead of the '/sites' endpoint
 
     .EXAMPLE
-        Export-SentinelOneSites -createdAt '2018-02-27T04:49:26.257525Z'
+        Get-SentinelOneSites -siteIds 1234567890,0987654321
 
-        Returns sites that were created at the exact UTC timestamp defined and saves the results to a CSV in the current working directory
+        Returns the sites matching the defined siteId value
+
+        This uses the '/sites/{site_id}' endpoint instead of the '/sites' endpoint
+
+    .EXAMPLE
+        Get-SentinelOneSites -createdAt '2018-02-27T04:49:26.257525Z'
+
+        Returns sites that were created at the exact UTC timestamp defined
+
+    .EXAMPLE
+        Get-SentinelOneSites -cursor 'YWdlbnRfaWQ6NTgwMjkzODE='
+
+        Returns sites after the first 10 results
 
     .NOTES
-        N\A
+        Look some notes
 
     .LINK
-        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Sites/Export-SentinelOneSites.html
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/sites/Get-SentinelOneSites.html
+
 #>
 
     [CmdletBinding( DefaultParameterSetName = 'index' )]
+    [Alias( 'Get-S1Site' )]
     Param (
         [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
         [ValidateNotNullOrEmpty()]
-        [Int64]$accountId,
+        [String]$accountId,
 
         [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
         [ValidateNotNullOrEmpty()]
-        [Int64[]]$accountIds,
+        [String[]]$accountIds,
 
         [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
         [ValidateNotNullOrEmpty()]
@@ -188,14 +230,21 @@ function Export-SentinelOneSites {
         [Int64]$activeLicenses,
 
         [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
-        [Switch]$adminOnly, #Error - Server cannot process any request
+        [Switch]$adminOnly,
 
         [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
         [Switch]$availableMoveSites,
 
         [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
+        [Switch]$countOnly,
+
+        [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
         [ValidateNotNullOrEmpty()]
         [String]$createdAt,
+
+        [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
+        [ValidateNotNullOrEmpty()]
+        [String]$cursor,
 
         [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
         [ValidateNotNullOrEmpty()]
@@ -224,6 +273,10 @@ function Export-SentinelOneSites {
         [Switch]$isDefault,
 
         [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
+        [ValidateRange(1, 1000)]
+        [Int64]$limit,
+
+        [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
         [ValidateNotNullOrEmpty()]
         [String]$module,
 
@@ -243,17 +296,36 @@ function Export-SentinelOneSites {
         [ValidateNotNullOrEmpty()]
         [String]$registrationToken,
 
+        [Parameter( Mandatory = $false, ParameterSetName = 'indexBySite' )]
+        [ValidateNotNullOrEmpty()]
+        [String]$siteId,
+
         [Parameter( Mandatory = $false, ValueFromPipeline = $true, ParameterSetName = 'index' )]
         [ValidateNotNullOrEmpty()]
-        [Int64[]]$siteIds,
+        [String[]]$siteIds,
 
         [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
-        [ValidateSet( 'Paid', 'Trial' )]
+        [ValidateSet( 'paid', 'trial' )]
         [String]$siteType,
 
         [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
-        [ValidateNotNullOrEmpty()]
+        [ValidateRange(1, 1000)]
+        [Int64]$skip,
+
+        [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
+        [Switch]$skipCount,
+
+        [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
+        [ValidateSet( 'complete', 'control', 'core' )]
         [String]$sku,
+
+        [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
+        [ValidateSet( 'accountName', 'activeLicenses', 'createdAt', 'description', 'expiration', 'id', 'name', 'siteType', 'sku', 'state', 'suite', 'totalLicenses', 'updatedAt' )]
+        [String]$sortBy,
+
+        [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
+        [ValidateSet( 'asc', 'desc' )]
+        [String]$sortOrder,
 
         [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
         [ValidateSet( 'active', 'deleted', 'expired' )]
@@ -264,10 +336,6 @@ function Export-SentinelOneSites {
         [String[]]$states,
 
         [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
-        [ValidateSet( 'Complete', 'Control', 'Core' )]
-        [String]$suite,
-
-        [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
         [ValidateNotNullOrEmpty()]
         [Int64]$totalLicenses,
 
@@ -276,81 +344,39 @@ function Export-SentinelOneSites {
         [String]$updatedAt,
 
         [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
-        [ValidateNotNullOrEmpty()]
-        [String]$fileName = "sites-$( Get-date -Format 'yyyy-MM-dd_HHmmss' )",
-
-        [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
-        [ValidateNotNullOrEmpty()]
-        [String]$filePath = $( (Get-Location).Path ),
-
-        [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
-        [Switch]$showReport
+        [switch]$allPages
 
     )
+
+    begin {
+
+        Switch ($PSCmdlet.ParameterSetName){
+            'index'         {$resource_uri = "/sites"}
+            'indexBySite'   {$resource_uri = "/sites/$siteId"}
+        }
+
+    }
 
     process{
 
         Write-Verbose "Running the [ $($PSCmdlet.ParameterSetName) ] parameterSet"
 
-        Switch ($PSCmdlet.ParameterSetName){
-            'index'         {$resource_uri = '/export/sites'}
-        }
+        #Region     [ Adjust parameters ]
 
-        $excludedParameters =   'Debug','ErrorAction','ErrorVariable','InformationAction',
-                                'InformationVariable','OutBuffer','OutVariable','PipelineVariable',
-                                'Verbose','WarningAction','WarningVariable',
-                                'fileName','filePath','showReport'
+            #Add default PSBoundParameters
+            if( -not $PSBoundParameters.ContainsKey('limit') ) { $PSBoundParameters.limit = 1000 }
 
-        $body = @{}
+            #Remove path
+            if( $PSBoundParameters.ContainsKey('siteId') ) { $PSBoundParameters.Remove('siteId') > $null }
 
-        if ($PSCmdlet.ParameterSetName -eq 'index') {
+        #EndRegion  [ Adjust  parameters ]
 
-            ForEach ($Key in $PSBoundParameters.GetEnumerator()){
+        Set-Variable -Name 'S1_sitesParameters' -Value $PSBoundParameters -Scope Global -Force
 
-                if($excludedParameters -contains $Key.Key ){$null}
-                elseif ( $Key.Value.GetType().IsArray ){
-                    Write-Verbose "[ $($Key.Key) ] is an array parameter"
-                    $body += @{ $Key.Key = $Key.Value -join (',') }
-                }
-                else{
-                    $body += @{ $Key.Key = $Key.Value }
-                }
-
-            }
-
-        }
-
-        try {
-
-            $fileOutput = "$filePath\$filename.csv"
-
-            if ( (Test-Path -Path $filePath -PathType Container) -eq $false ){
-                New-Item -Path $filePath -ItemType Directory > $null
-            }
-
-            $ApiToken = Get-SentinelOneAPIKey -plainText
-            $S1_Headers.Add('Authorization', "ApiToken $ApiToken")
-
-            Invoke-RestMethod -Method Get -Uri ( $SentinelOne_Base_URI + $resource_uri ) -Headers $S1_Headers -Body $body -OutFile $fileOutput `
-                -ErrorAction Stop -ErrorVariable rest_error
-
-        } catch {
-            Write-Error $_
-        } finally {
-            [void] ( $S1_Headers.Remove('Authorization') )
-        }
-
-        if (Test-Path -Path $fileOutput -PathType Leaf){
-
-            Write-Verbose "[ $($fileName) ] was saved to [ $($filePath) ]"
-
-            if ($showReport){
-                Invoke-Item -Path $filePath
-            }
-
-        }
-        else{Write-Warning "[ $($fileName) ] was not saved to [ $($filePath) ]"}
+        Invoke-SentinelOneRequest -Method GET -resource_Uri $resource_Uri -uri_Filter $PSBoundParameters -allPages:$allPages
 
     }
+
+    end {}
 
 }

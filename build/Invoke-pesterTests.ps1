@@ -120,8 +120,6 @@ try {
 
     $testPath = Join-Path -Path $rootPath -ChildPath "tests"
 
-    #$withoutAuth = $( [bool]$Api_Key_Public -eq $false -or [bool]$Api_Key_Secret -eq $false )
-
 }
 catch {
     Write-Error $_

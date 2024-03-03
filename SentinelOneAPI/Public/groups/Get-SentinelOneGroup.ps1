@@ -1,13 +1,17 @@
-function Get-SentinelOneGroups {
+function Get-SentinelOneGroup {
 <#
     .SYNOPSIS
         Get data of groups that match the filter.
 
     .DESCRIPTION
-        The Get-SentinelOneGroups cmdlet gets data of groups that match the filter.
+        The Get-SentinelOneGroup cmdlet gets data of groups that match the filter.
 
         Using the "group_id" parameter will call the the "/groups/{group_id}" endpoint
         instead of the "/groups" endpoint.
+
+        Endpoints:
+            /web/api/v2.1/groups
+            /web/api/v2.1/groups/{group_id}
 
     .PARAMETER accountIds
         Return accounts under the defined ids
@@ -140,29 +144,29 @@ function Get-SentinelOneGroups {
         2018-02-27T04:49:26.257525Z
 
     .EXAMPLE
-        Get-SentinelOneGroups
+        Get-SentinelOneGroup
 
         Returns the first 10 groups
 
     .EXAMPLE
-        Get-SentinelOneGroups -group_id 1234567890
+        Get-SentinelOneGroup -group_id 1234567890
 
         Returns the group matching the defined id.
 
     .EXAMPLE
-        Get-SentinelOneGroups -countOnly
+        Get-SentinelOneGroup -countOnly
 
         Returns the number of groups without any data that match a filter.
 
     .EXAMPLE
-        Get-SentinelOneGroups -updatedAt__gt '2018-02-27 14:32'
+        Get-SentinelOneGroup -updatedAt__gt '2018-02-27 14:32'
 
         Returns groups that were updated after the defined dataTime
 
         DataTime values are converted to UTC, use -verbose to see the value it is converted to.
 
     .EXAMPLE
-        Get-SentinelOneGroups -cursor 'YWdlbnRfaWQ6NTgwMjkzODE='
+        Get-SentinelOneGroup -cursor 'YWdlbnRfaWQ6NTgwMjkzODE='
 
         Returns data after the first 10 results
 
@@ -172,11 +176,12 @@ function Get-SentinelOneGroups {
         N\A
 
     .LINK
-        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Groups/Get-SentinelOneGroups.html
+        https://celerium.github.io/SentinelOne-PowerShellWrapper/site/Groups/Get-SentinelOneGroup.html
 
 #>
 
     [CmdletBinding( DefaultParameterSetName = 'index' )]
+    [Alias( 'Get-S1Group' )]
     Param (
         [Parameter( Mandatory = $false, ParameterSetName = 'index' )]
         [ValidateNotNullOrEmpty()]
