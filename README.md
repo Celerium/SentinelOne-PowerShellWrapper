@@ -1,3 +1,8 @@
+> [!CAUTION]
+> I no longer have access to the S1 mgmt console so I will be archiving this module.
+
+
+
 <h1 align="center">
   <br>
   <a href="http://Celerium.org"><img src="https://raw.githubusercontent.com/Celerium/SentinelOne-PowerShellWrapper/main/.github/images/Celerium_PoSHGallery_SentinelOneAPI.png" alt="_CeleriumDemo" width="200"></a>
